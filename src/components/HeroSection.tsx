@@ -121,9 +121,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
                 exit="exit"
                 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white font-heading tracking-tight drop-shadow-2xl flex flex-wrap justify-center gap-x-2"
               >
-                {phrases[0].split('').map((char, index) => (
-                  <motion.span key={index} variants={letterVariants} className="inline-block">
-                    {char === ' ' ? '\u00A0' : char}
+                {phrases[0].split(' ').map((word, index) => (
+                  <motion.span key={index} variants={letterVariants} className="inline-block mx-2">
+                    {word}
                   </motion.span>
                 ))}
               </motion.div>
@@ -138,9 +138,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
                 exit="exit"
                 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#C9A227] font-heading tracking-wide drop-shadow-2xl flex flex-wrap justify-center gap-x-2"
               >
-                {phrases[1].split('').map((char, index) => (
-                  <motion.span key={index} variants={letterVariants} className="inline-block">
-                    {char === ' ' ? '\u00A0' : char}
+                {phrases[1].split(' ').map((word, index) => (
+                  <motion.span key={index} variants={letterVariants} className="inline-block mx-2">
+                    {word}
                   </motion.span>
                 ))}
               </motion.div>
@@ -155,9 +155,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
                 exit="exit"
                 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white font-heading tracking-tight drop-shadow-2xl flex flex-wrap justify-center gap-x-2"
               >
-                {phrases[2].split('').map((char, index) => (
-                  <motion.span key={index} variants={letterVariants} className="inline-block text-[#116B43] bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-100 to-[#C9A227]">
-                    {char === ' ' ? '\u00A0' : char}
+                {phrases[2].split(' ').map((word, index) => (
+                  <motion.span key={index} variants={letterVariants} className="inline-block mx-2 text-[#116B43] bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-100 to-[#C9A227]">
+                    {word}
                   </motion.span>
                 ))}
               </motion.div>
