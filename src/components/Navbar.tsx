@@ -104,8 +104,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal }) => {
               }}
               className="group flex items-center gap-3 cursor-pointer"
             >
-              <div className="h-12 w-12 sm:h-14 sm:w-14 p-1 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg group-hover:border-[#C9A227] transition-all duration-300 flex items-center justify-center">
-                <CompanyLogo variant="white" showText={false} className="h-full w-full" />
+              <div className="h-12 w-12 sm:h-14 sm:w-14 p-1.5 rounded-xl bg-white/15 backdrop-blur-md border border-[#116B43]/50 shadow-[0_0_15px_rgba(17,107,67,0.5)] group-hover:border-[#116B43] group-hover:shadow-[0_0_25px_rgba(17,107,67,0.85)] transition-all duration-300 flex items-center justify-center">
+                <CompanyLogo variant="full" showText={false} className="h-full w-full" />
               </div>
               <div className="flex flex-col">
                 <span className="text-xl sm:text-2xl font-black text-white tracking-wide font-heading">

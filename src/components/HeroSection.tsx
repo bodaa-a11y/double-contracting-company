@@ -174,8 +174,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
                 {/* Reveal Official Logo with Glow */}
                 <div className="relative mb-6 group">
                   <div className="absolute -inset-6 bg-gradient-to-r from-[#116B43] via-[#C9A227] to-[#116B43] rounded-3xl blur-2xl opacity-40 group-hover:opacity-70 transition-opacity duration-700 animate-pulse" />
-                  <div className="relative bg-[#39424C]/80 backdrop-blur-2xl p-6 sm:p-8 rounded-3xl border border-white/20 shadow-[0_0_50px_rgba(17,107,67,0.5)]">
-                    <CompanyLogo variant="white" className="h-28 sm:h-36 md:h-44 w-auto" />
+                  <div className="relative bg-[#39424C]/80 backdrop-blur-2xl p-6 sm:p-8 rounded-3xl border border-[#116B43]/50 shadow-[0_0_50px_rgba(17,107,67,0.6)]">
+                    <CompanyLogo variant="full" className="h-28 sm:h-36 md:h-44 w-auto" />
                   </div>
                 </div>
 
