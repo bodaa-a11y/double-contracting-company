@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ServiceItem } from '../types';
 import { X, CheckCircle, ArrowLeft, PhoneCall, ShieldCheck, Sparkles } from 'lucide-react';
 import { COMPANY_INFO } from '../data/companyData';
+import { useLenis } from './LenisProvider';
 
 interface ServiceModalProps {
   service: ServiceItem | null;
@@ -15,11 +16,21 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({
   onClose,
   onOpenCallModal,
 }) => {
+  const lenis = useLenis();
+
+  useEffect(() => {
+    if (!service) return;
+    lenis?.stop();
+    return () => {
+      lenis?.start();
+    };
+  }, [service, lenis]);
+
   if (!service) return null;
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto" data-lenis-prevent>
         {/* Backdrop */}
         <motion.div
           initial={{ opacity: 0 }}

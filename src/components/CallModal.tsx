@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, PhoneCall, MessageCircle, MapPin, Clock, ShieldCheck } from 'lucide-react';
 import { COMPANY_INFO } from '../data/companyData';
+import { useLenis } from './LenisProvider';
 
 interface CallModalProps {
   isOpen: boolean;
@@ -9,11 +10,21 @@ interface CallModalProps {
 }
 
 export const CallModal: React.FC<CallModalProps> = ({ isOpen, onClose }) => {
+  const lenis = useLenis();
+
+  useEffect(() => {
+    if (!isOpen) return;
+    lenis?.stop();
+    return () => {
+      lenis?.start();
+    };
+  }, [isOpen, lenis]);
+
   if (!isOpen) return null;
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto">
+      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto" data-lenis-prevent>
         {/* Backdrop */}
         <motion.div
           initial={{ opacity: 0 }}

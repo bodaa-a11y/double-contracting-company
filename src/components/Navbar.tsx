@@ -3,12 +3,14 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Phone, Menu, X, Building2, ArrowLeft } from 'lucide-react';
 import { CompanyLogo } from './CompanyLogo';
 import { COMPANY_INFO } from '../data/companyData';
+import { useLenis } from './LenisProvider';
 
 interface NavbarProps {
   onOpenCallModal: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal }) => {
+  const lenis = useLenis();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
@@ -23,12 +25,34 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal }) => {
   ];
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+    if (!lenis) {
+      const handleScroll = () => {
+        setScrolled(window.scrollY > 50);
+
+        // ScrollSpy
+        const sections = navLinks.map((link) => document.getElementById(link.id));
+        const scrollPosition = window.scrollY + 200;
+
+        for (let i = sections.length - 1; i >= 0; i--) {
+          const section = sections[i];
+          if (section && section.offsetTop <= scrollPosition) {
+            setActiveSection(navLinks[i].id);
+            break;
+          }
+        }
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
+
+    const onScroll = (e: any) => {
+      const scroll = e.scroll;
+      setScrolled(scroll > 50);
 
       // ScrollSpy
       const sections = navLinks.map((link) => document.getElementById(link.id));
-      const scrollPosition = window.scrollY + 200;
+      const scrollPosition = scroll + 200;
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
@@ -39,14 +63,20 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal }) => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    lenis.on('scroll', onScroll);
+    onScroll({ scroll: lenis.scroll });
+
+    return () => {
+      lenis.off('scroll', onScroll);
+    };
+  }, [lenis]);
 
   const scrollTo = (id: string) => {
     setMobileMenuOpen(false);
     const element = document.getElementById(id);
-    if (element) {
+    if (element && lenis) {
+      lenis.scrollTo(element, { offset: -80, duration: 1.5 });
+    } else if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };

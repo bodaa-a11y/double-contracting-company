@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ProjectItem } from '../types';
 import { X, MapPin, Maximize2, Calendar, DollarSign, UserCheck, ChevronRight, ChevronLeft, ShieldCheck } from 'lucide-react';
+import { useLenis } from './LenisProvider';
 
 interface ProjectModalProps {
   project: ProjectItem | null;
@@ -14,6 +15,16 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
   onClose,
   onOpenCallModal,
 }) => {
+  const lenis = useLenis();
+
+  useEffect(() => {
+    if (!project) return;
+    lenis?.stop();
+    return () => {
+      lenis?.start();
+    };
+  }, [project, lenis]);
+
   if (!project) return null;
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
@@ -29,7 +40,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto" data-lenis-prevent>
         {/* Backdrop */}
         <motion.div
           initial={{ opacity: 0 }}
