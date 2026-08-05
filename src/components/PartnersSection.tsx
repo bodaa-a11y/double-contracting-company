@@ -5,7 +5,7 @@ import { Handshake } from 'lucide-react';
 
 export const PartnersSection: React.FC = () => {
   // Duplicate array for seamless infinite marquee loop
-  const marqueePartners = [...PARTNERS, ...PARTNERS, ...PARTNERS];
+  const marqueePartners = [...PARTNERS, ...PARTNERS];
 
   return (
     <section className="py-20 bg-[#39424C] text-white relative overflow-hidden border-t border-white/10">

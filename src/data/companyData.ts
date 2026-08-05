@@ -8,7 +8,7 @@ export const COMPANY_INFO = {
   phoneAlt: '+964 770 123 4567',
   email: 'info@double-construction.com',
   address: 'الرياض - حي الصحافة - برج التنمية - الدور 12 | بغداد - حي المنصور - شارع الرواد',
-  whatsapp: '966501234567',
+  whatsapp: '966551142694',
   social: {
     linkedin: 'https://linkedin.com',
     twitter: 'https://twitter.com',

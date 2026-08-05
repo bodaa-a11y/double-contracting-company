@@ -21,10 +21,21 @@ export const ContactSection: React.FC = () => {
     if (!formData.name || !formData.phone) return;
 
     setLoading(true);
+
+    const text = `طلب استشارة جديد:
+الاسم: ${formData.name}
+الهاتف: ${formData.phone}
+البريد: ${formData.email || '—'}
+الخدمة: ${formData.serviceType}
+المدينة: ${formData.city}
+الرسالة: ${formData.message || '—'}`;
+
+    window.open(`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(text)}`, '_blank');
+
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
-    }, 1000);
+    }, 800);
   };
 
   return (

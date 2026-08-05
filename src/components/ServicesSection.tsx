@@ -95,6 +95,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#39424C] via-[#39424C]/60 to-transparent" />
 

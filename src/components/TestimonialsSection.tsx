@@ -74,6 +74,7 @@ export const TestimonialsSection: React.FC = () => {
                   src={test.avatar}
                   alt={test.name}
                   className="w-14 h-14 rounded-full object-cover border-2 border-[#116B43]"
+                  loading="lazy"
                 />
                 <div className="text-right">
                   <div className="font-extrabold text-[#39424C] text-lg font-heading">{test.name}</div>

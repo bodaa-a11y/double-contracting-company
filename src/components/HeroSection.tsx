@@ -83,6 +83,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
           src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b2?auto=format&fit=crop&w=2000&q=90"
           alt="شركة دبل للمقاولات"
           className="w-full h-full object-cover object-center scale-105 animate-pulse duration-10000"
+          fetchPriority="high"
         />
         {/* Multi-layered Vignette Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#39424C] via-[#39424C]/75 to-black/80" />

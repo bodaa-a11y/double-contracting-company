@@ -101,6 +101,7 @@ export const AboutSection: React.FC = () => {
                   src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b2?auto=format&fit=crop&w=1200&q=80"
                   alt="موقع عمل شركة دبل"
                   className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </div>
