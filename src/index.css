@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --font-tajawal: 'Tajawal', sans-serif;
+  --font-ibm: 'IBM Plex Sans Arabic', sans-serif;
+  --color-primary-green: #116B43;
+  --color-dark-gray: #39424C;
+  --color-light-gray: #F5F7F8;
+  --color-gold-accent: #C9A227;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-tajawal), sans-serif;
+    background-color: #F5F7F8;
+    color: #39424C;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-ibm), var(--font-tajawal), sans-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+::-webkit-scrollbar-thumb {
+  background: #116B43;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A227;
+}
+
+/* Glassmorphism utility classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-panel-dark {
+  background: rgba(20, 27, 34, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-gold {
+  background: linear-gradient(135deg, rgba(201, 162, 39, 0.1) 0%, rgba(17, 107, 67, 0.05) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 162, 39, 0.25);
+}
+
+/* Glowing animation */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(17, 107, 67, 0.3), 0 0 30px rgba(201, 162, 39, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(17, 107, 67, 0.6), 0 0 50px rgba(201, 162, 39, 0.4);
+  }
+}
+
+.glow-animation {
+  animation: glow-pulse 4s infinite ease-in-out;
+}
+
+/* Shimmer border */
+.animated-gradient-border {
+  position: relative;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(17, 107, 67, 0.8), rgba(201, 162, 39, 0.8), rgba(57, 66, 76, 0.8));
+  padding: 1px;
+}
+
+/* Lenis smooth scrolling rules */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+

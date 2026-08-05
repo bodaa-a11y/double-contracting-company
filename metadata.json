@@ -1,0 +1,6 @@
+{
+  "name": "شركة دبل للمقاولات والتجارة العامة",
+  "description": "موقع شركة دبل للمقاولات والتجارة العامة - تصميم فاخر ومتكامل باللغة العربية للمقاولات والتطوير العقاري",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
