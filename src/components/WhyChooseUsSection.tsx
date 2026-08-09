@@ -26,7 +26,7 @@ export const WhyChooseUsSection: React.FC = () => {
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#116B43]/10 text-[#116B43] text-sm font-extrabold border border-[#116B43]/20"
           >
             <Award className="w-4 h-4 text-[#C9A227]" />
-            <span>لماذا تختار شركة دبل؟</span>
+            <span>لماذا تختار شركة رؤية الريادة؟</span>
           </motion.div>
 
           <motion.h2

@@ -56,7 +56,7 @@ export const CallModal: React.FC<CallModalProps> = ({ isOpen, onClose }) => {
               <PhoneCall className="w-8 h-8 animate-pulse" />
             </div>
             <h3 className="text-2xl font-black font-heading text-white">
-              تواصل مباشر مع شركة دبل
+              تواصل مباشر مع شركة رؤية الريادة للمقاولات والتطوير العقاري
             </h3>
             <p className="text-xs text-gray-300 font-medium">
               اختر الوسيلة المناسبة للتواصل مع فريق الاستشارات الهندسية والمبيعات
@@ -93,7 +93,7 @@ export const CallModal: React.FC<CallModalProps> = ({ isOpen, onClose }) => {
 
             <a
               href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(
-                'السلام عليكم، أود الاستفسار عن خدمات شركة دبل للمقاولات والتجارة العامة'
+                'السلام عليكم، أود الاستفسار عن خدمات شركة رؤية الريادة للمقاولات والتطوير العقاري'
               )}`}
               target="_blank"
               rel="noreferrer"

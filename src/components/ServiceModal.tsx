@@ -68,7 +68,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({
             
             <div className="absolute bottom-6 right-6 left-6 text-right">
               <span className="inline-block px-3 py-1 rounded-full bg-[#116B43] text-white text-xs font-bold mb-2 border border-[#C9A227]/50">
-                شركة دبل للمقاولات
+                شركة رؤية الريادة للمقاولات
               </span>
               <h3 className="text-3xl sm:text-4xl font-black font-heading text-white mb-1">
                 {service.title}

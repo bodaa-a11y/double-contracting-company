@@ -53,7 +53,7 @@ export default function App() {
           {/* Viewport Animated Statistics Counters */}
           <StatsSection />
 
-          {/* Why Choose Us (لماذا دبل؟) */}
+          {/* Why Choose Us (لماذا رؤية الريادة؟) */}
           <WhyChooseUsSection />
 
           {/* Partners Infinite Marquee */}

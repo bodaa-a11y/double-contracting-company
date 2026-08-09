@@ -101,7 +101,7 @@ export const ContactSection: React.FC = () => {
                   تم استلام طلبك بنجاح!
                 </h4>
                 <p className="text-gray-200 text-sm leading-relaxed">
-                  شكراً لتواصلك مع <strong>شركة دبل للمقاولات والتجارة العامة</strong>. سيتواصل معك أحد مهندسينا الاستشاريين خلال أقل من 24 ساعة.
+                  شكراً لتواصلك مع <strong>شركة رؤية الريادة للمقاولات والتطوير العقاري</strong>. سيتواصل معك أحد مهندسينا الاستشاريين خلال أقل من 24 ساعة.
                 </p>
                 <button
                   onClick={() => {
@@ -283,7 +283,7 @@ export const ContactSection: React.FC = () => {
             {/* Google Maps Placeholder Frame */}
             <div className="rounded-3xl overflow-hidden border border-white/20 shadow-2xl relative h-64 bg-slate-800 group">
               <iframe
-                title="موقع شركة دبل للمقاولات"
+                title="موقع شركة رؤية الريادة للمقاولات"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.562728!2d46.6375!3d24.8125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ4JzQ1LjAiTiA0NsKwMzgnMTU2LjAiRQ!5e0!3m2!1sar!2s!4v1650000000000!5m2!1sar!2s"
                 className="w-full h-full filter grayscale contrast-125 opacity-70 group-hover:opacity-100 transition-opacity duration-500"
                 loading="lazy"

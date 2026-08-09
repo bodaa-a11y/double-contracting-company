@@ -22,7 +22,7 @@ export const AboutSection: React.FC = () => {
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#116B43]/10 text-[#116B43] text-sm font-extrabold border border-[#116B43]/20">
               <Award className="w-4 h-4 text-[#C9A227]" />
-              <span>من نحن • شركة دبل للمقاولات والتجارة العامة</span>
+              <span>من نحن • شركة رؤية الريادة للمقاولات والتطوير العقاري</span>
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-black text-[#39424C] font-heading tracking-tight leading-tight">
@@ -30,7 +30,7 @@ export const AboutSection: React.FC = () => {
             </h2>
 
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed font-medium">
-              تأسست <strong className="text-[#116B43]">شركة دبل للمقاولات والتجارة العامة</strong> لتمثل نموذجاً قيادياً فريداً في قطاع البناء والتشييد والتطوير العقاري. نحن نتكامل بين الخبرات الهندسية العالمية والتنفيذ الميداني المحترف لتسليم مشاريع عملاقة تتخطى توقعات العملاء.
+              تأسست <strong className="text-[#116B43]">شركة رؤية الريادة للمقاولات والتطوير العقاري</strong> لتمثل نموذجاً قيادياً فريداً في قطاع البناء والتشييد والتطوير العقاري. نحن نتكامل بين الخبرات الهندسية العالمية والتنفيذ الميداني المحترف لتسليم مشاريع عملاقة تتخطى توقعات العملاء.
             </p>
 
             {/* Vision & Mission Cards */}
@@ -99,7 +99,7 @@ export const AboutSection: React.FC = () => {
               <div className="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl group">
                 <img
                   src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b2?auto=format&fit=crop&w=1200&q=80"
-                  alt="موقع عمل شركة دبل"
+                  alt="موقع عمل شركة رؤية الريادة"
                   className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   loading="lazy"
                 />
@@ -132,7 +132,7 @@ export const AboutSection: React.FC = () => {
                 </div>
                 <div>
                   <div className="font-black text-base text-white">عاماً من التميز والابتكار</div>
-                  <div className="text-[#C9A227] text-xs font-semibold">شركة دبل للمقاولات والتجارة</div>
+                   <div className="text-[#C9A227] text-xs font-semibold">شركة رؤية الريادة للمقاولات والتطوير العقاري</div>
                 </div>
               </motion.div>
             </div>

@@ -5,7 +5,7 @@ import { COMPANY_INFO } from '../data/companyData';
 
 export const FloatingWhatsApp: React.FC = () => {
   const whatsappUrl = `https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(
-    'السلام عليكم، أود الاستفسار عن خدمات شركة دبل للمقاولات والتجارة العامة'
+    'السلام عليكم، أود الاستفسار عن خدمات شركة رؤية الريادة للمقاولات والتطوير العقاري'
   )}`;
 
   return (

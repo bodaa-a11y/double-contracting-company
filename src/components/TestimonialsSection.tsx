@@ -37,7 +37,7 @@ export const TestimonialsSection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-gray-600 text-base sm:text-lg font-medium"
           >
-            الانطباعات الصادقة لشركائنا تعكس مدى التزام شركة دبل بأعلى معايير الإنجاز والجودة الميدانية.
+            الانطباعات الصادقة لشركائنا تعكس مدى التزام شركة رؤية الريادة بأعلى معايير الإنجاز والجودة الميدانية.
           </motion.p>
         </div>
 

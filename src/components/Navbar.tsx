@@ -20,7 +20,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal }) => {
     { id: 'about', label: 'من نحن' },
     { id: 'services', label: 'الخدمات' },
     { id: 'projects', label: 'المشاريع' },
-    { id: 'why-us', label: 'لماذا دبل؟' },
+    { id: 'why-us', label: 'لماذا رؤية الريادة؟' },
     { id: 'contact', label: 'اتصل بنا' },
   ];
 
@@ -109,10 +109,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal }) => {
               </div>
               <div className="flex flex-col">
                 <span className="text-xl sm:text-2xl font-black text-white tracking-wide font-heading">
-                  دبـــل
+                  رؤية الريادة
                 </span>
                 <span className="text-[10px] sm:text-xs text-[#C9A227] font-semibold tracking-wider">
-                  للمقاولات والتجارة العامة
+                  للمقاولات والتطوير العقاري
                 </span>
               </div>
             </a>

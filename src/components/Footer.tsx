@@ -20,8 +20,8 @@ export const Footer: React.FC = () => {
                 <CompanyLogo variant="full" showText={false} className="h-full w-full" />
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-black text-white font-heading">شركة دبل</span>
-                <span className="text-xs text-[#C9A227] font-bold">للمقاولات والتجارة العامة</span>
+                <span className="text-2xl font-black text-white font-heading">شركة رؤية الريادة</span>
+                <span className="text-xs text-[#C9A227] font-bold">للمقاولات والتطوير العقاري</span>
               </div>
             </div>
 
@@ -56,7 +56,7 @@ export const Footer: React.FC = () => {
               <li><a href="#about" className="hover:text-white transition-colors">من نحن</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">خدماتنا</a></li>
               <li><a href="#projects" className="hover:text-white transition-colors">المشاريع</a></li>
-              <li><a href="#why-us" className="hover:text-white transition-colors">لماذا دبل؟</a></li>
+              <li><a href="#why-us" className="hover:text-white transition-colors">لماذا رؤية الريادة؟</a></li>
               <li><a href="#contact" className="hover:text-white transition-colors">اتصل بنا</a></li>
             </ul>
           </div>
@@ -98,7 +98,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar & Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-          <p>© 2026 شركة دبل للمقاولات والتجارة العامة. جميع الحقوق محفوظة.</p>
+          <p>© 2026 شركة رؤية الريادة للمقاولات والتطوير العقاري. جميع الحقوق محفوظة.</p>
           
           <button
             onClick={scrollToTop}

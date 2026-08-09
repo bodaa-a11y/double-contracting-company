@@ -14,7 +14,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
   const phrases = [
     'نبني المستقبل',
     'بجودة • احترافية • ثقة',
-    'شركة دبل للمقاولات والتجارة العامة'
+    'شركة رؤية الريادة للمقاولات والتطوير العقاري'
   ];
 
   useEffect(() => {
@@ -81,7 +81,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b2?auto=format&fit=crop&w=2000&q=90"
-          alt="شركة دبل للمقاولات"
+          alt="شركة رؤية الريادة للمقاولات"
           className="w-full h-full object-cover object-center scale-105 animate-pulse duration-10000"
           fetchPriority="high"
         />
@@ -180,7 +180,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
                 </div>
 
                 <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-white font-heading tracking-tight mb-3">
-                  شركة دبل للمقاولات والتجارة العامة
+                  شركة رؤية الريادة للمقاولات والتطوير العقاري
                 </h1>
 
                 <p className="text-base sm:text-xl text-gray-300 max-w-2xl font-medium leading-relaxed mb-8">

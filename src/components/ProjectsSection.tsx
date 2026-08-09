@@ -58,7 +58,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
             transition={{ delay: 0.2 }}
             className="text-gray-600 text-base sm:text-lg font-medium"
           >
-            استعرض بعضاً من أهم المشاريع السكنية، التجارية، والمجتمعية التي نفذتها شركة دبل للمقاولات والتجارة العامة.
+            استعرض بعضاً من أهم المشاريع السكنية، التجارية، والمجتمعية التي نفذتها شركة رؤية الريادة للمقاولات والتطوير العقاري.
           </motion.p>
         </div>
 
