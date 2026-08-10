@@ -73,23 +73,22 @@ export const CallModal: React.FC<CallModalProps> = ({ isOpen, onClose }) => {
                 <PhoneCall className="w-5 h-5" />
               </div>
               <div className="text-right">
-                <div className="text-xs text-gray-300 group-hover:text-white font-bold">فرع المملكة العربية السعودية</div>
+                <div className="text-xs text-gray-300 group-hover:text-white font-bold">المكتب الرئيسي - الخرج</div>
                 <div className="text-lg font-black text-white font-heading dir-ltr text-right">{COMPANY_INFO.phone}</div>
               </div>
             </a>
 
-            <a
-              href={`tel:${COMPANY_INFO.phoneAlt}`}
-              className="p-4 rounded-2xl bg-white/10 hover:bg-[#116B43] border border-white/15 hover:border-[#C9A227] transition-all duration-300 flex items-center justify-between group cursor-pointer"
+            <div
+              className="p-4 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between group"
             >
-              <div className="p-3 rounded-xl bg-white/10 text-[#C9A227] group-hover:bg-white group-hover:text-[#116B43]">
-                <PhoneCall className="w-5 h-5" />
+              <div className="p-3 rounded-xl bg-white/10 text-[#C9A227]">
+                <ShieldCheck className="w-5 h-5" />
               </div>
               <div className="text-right">
-                <div className="text-xs text-gray-300 group-hover:text-white font-bold">فرع جمهورية العراق</div>
+                <div className="text-xs text-gray-400 font-bold">الرقم الموحد للمنشأة</div>
                 <div className="text-lg font-black text-white font-heading dir-ltr text-right">{COMPANY_INFO.phoneAlt}</div>
               </div>
-            </a>
+            </div>
 
             <a
               href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(
