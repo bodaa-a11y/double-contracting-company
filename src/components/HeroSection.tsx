@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { CompanyLogo } from './CompanyLogo';
-import { ArrowLeft, Building, ChevronDown, ShieldCheck, Sparkles, PhoneCall } from 'lucide-react';
+import { ArrowLeft, Building, ChevronDown, ShieldCheck, Sparkles, PhoneCall, FileText } from 'lucide-react';
 import { COMPANY_INFO } from '../data/companyData';
 
 interface HeroSectionProps {
   onOpenCallModal: () => void;
+  onOpenProfileModal: () => void;
 }
 
-export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => {
+export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal, onOpenProfileModal }) => {
   const [animationStep, setAnimationStep] = useState(0);
 
   const phrases = [
@@ -196,6 +197,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
                     <span>استكشف المشاريع</span>
                     <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-300" />
                   </a>
+
+                  <button
+                    onClick={onOpenProfileModal}
+                    className="px-8 py-4 rounded-2xl bg-[#C9A227] hover:bg-[#B08D1E] text-[#2B323A] font-black text-base sm:text-lg border border-[#C9A227]/40 shadow-[0_10px_30px_rgba(201,162,39,0.3)] hover:scale-105 hover:shadow-[0_15px_40px_rgba(201,162,39,0.5)] transition-all duration-300 flex items-center gap-3 cursor-pointer"
+                  >
+                    <FileText className="w-5 h-5 text-[#2B323A]" />
+                    <span>بروفايل الشركة</span>
+                  </button>
 
                   <button
                     onClick={onOpenCallModal}

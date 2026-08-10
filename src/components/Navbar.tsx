@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Phone, Menu, X, Building2, ArrowLeft } from 'lucide-react';
+import { Phone, Menu, X, Building2, ArrowLeft, FileText } from 'lucide-react';
 import { CompanyLogo } from './CompanyLogo';
 import { COMPANY_INFO } from '../data/companyData';
 import { useLenis } from './LenisProvider';
 
 interface NavbarProps {
   onOpenCallModal: () => void;
+  onOpenProfileModal: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal }) => {
+export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal, onOpenProfileModal }) => {
   const lenis = useLenis();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -145,6 +146,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal }) => {
             {/* Call Button & Mobile Menu Toggle */}
             <div className="flex items-center gap-3">
               <button
+                onClick={onOpenProfileModal}
+                className="hidden sm:flex px-4 py-2.5 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-extrabold border border-white/20 shadow-lg hover:border-[#C9A227] transition-all duration-300 items-center gap-2 cursor-pointer"
+              >
+                <FileText className="w-4 h-4 text-[#C9A227]" />
+                <span>بروفايل الشركة</span>
+              </button>
+
+              <button
                 onClick={onOpenCallModal}
                 className="relative group overflow-hidden px-5 py-2.5 rounded-full bg-gradient-to-r from-[#116B43] to-[#0D5233] text-white text-sm font-bold shadow-[0_4px_20px_rgba(17,107,67,0.4)] border border-[#C9A227]/50 hover:shadow-[0_6px_25px_rgba(201,162,39,0.5)] transition-all duration-300 flex items-center gap-2 cursor-pointer"
               >
@@ -192,6 +201,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal }) => {
               ))}
 
               <div className="pt-4 border-t border-white/10 flex flex-col gap-3">
+                <button
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    onOpenProfileModal();
+                  }}
+                  className="w-full flex items-center justify-center gap-3 py-3 rounded-xl bg-white/10 border border-white/20 text-white font-extrabold shadow-lg cursor-pointer"
+                >
+                  <FileText className="w-5 h-5 text-[#C9A227]" />
+                  <span>بروفايل الشركة (PDF)</span>
+                </button>
+
                 <a
                   href={`tel:${COMPANY_INFO.phone}`}
                   className="w-full flex items-center justify-center gap-3 py-3 rounded-xl bg-[#C9A227] text-[#39424C] font-extrabold shadow-lg"
