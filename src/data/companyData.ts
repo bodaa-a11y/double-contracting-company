@@ -90,7 +90,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'finishing-decoration',
     title: 'التشطيبات والديكور',
     subtitle: 'لمسات فنية رفيعة المستوى للواجهات والديكورات الداخلية',
-    iconName: 'Sparkles',
+    iconName: 'Paintbrush',
     description: 'تنفيذ أعمال التشطيبات الفاخرة للداخل والخارج بأجود أنواع الرخام، الخشب، والواجهات الحديثة لتخرج التحفة المعمارية بأعلى صورة جمالية.',
     detailedScope: [
       'التصميم الداخلي والأنظمة الضوئية الذكية',
