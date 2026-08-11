@@ -129,7 +129,7 @@ export const SERVICES: ServiceItem[] = [
       'تركيب أنظمة التصريف ومحطات التجميع والتغذية'
     ],
     features: ['معدات ثقيلة متطورة', 'معايير أمان حكومية', 'متانة تشغيلية مستدامة'],
-    image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?auto=format&fit=crop&w=1200&q=80'
+    image: '/infrastructure_work.jpg'
   },
   {
     id: 'commercial-trading',
