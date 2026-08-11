@@ -144,7 +144,7 @@ export const SERVICES: ServiceItem[] = [
       'تقديم عقود الصيانة والتأمين للمعدات والآلات'
     ],
     features: ['سلسلة إمداد موثوقة', 'أسعار تنافسية مباشرة', 'جودة معتمدة حاصلة على ISO'],
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80'
+    image: 'supply_materials.jpg'
   }
 ];
 
@@ -177,13 +177,7 @@ export const TEXT_SCROLL_ITEMS = [
     image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
     desc: 'بيئة سكنية آمنة توفر كافة سبل الرفاهية والحدائق الغنّاء.'
   },
-  {
-    id: 'factories',
-    title: 'مصانع ومستودعات',
-    sub: 'منشآت صناعية عملاقة',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
-    desc: 'هياكل معدنية ومصانع مجهزة بأحدث معايير السلامة الصناعية.'
-  },
+
   {
     id: 'admin-buildings',
     title: 'مبانٍ إدارية',
