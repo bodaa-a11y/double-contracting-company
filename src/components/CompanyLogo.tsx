@@ -15,11 +15,15 @@ export const CompanyLogo: React.FC<LogoProps> = ({
 
   if (onlyIcon) {
     return (
-      <div className={`relative overflow-hidden select-none ${className}`} style={{ aspectRatio: '1/1' }}>
+      <div className={`relative overflow-hidden select-none bg-white rounded-lg ${className}`} style={{ aspectRatio: '1/1' }}>
         <img
           src="/logo.png"
           alt="شعار شركة رؤية الريادة"
-          className={`absolute left-0 right-0 top-0 w-full h-[160%] object-cover object-top`}
+          className="absolute inset-0 w-full h-full object-contain"
+          style={{
+            transform: 'scale(1.35)',
+            transformOrigin: '50% 12%'
+          }}
         />
       </div>
     );

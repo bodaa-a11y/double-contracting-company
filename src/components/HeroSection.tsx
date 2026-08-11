@@ -6,10 +6,9 @@ import { COMPANY_INFO } from '../data/companyData';
 
 interface HeroSectionProps {
   onOpenCallModal: () => void;
-  onOpenProfileModal: () => void;
 }
 
-export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal, onOpenProfileModal }) => {
+export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => {
   const [animationStep, setAnimationStep] = useState(0);
 
   const phrases = [
@@ -175,8 +174,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal, onOpe
                 {/* Reveal Official Logo with Glow */}
                 <div className="relative mb-6 group">
                   <div className="absolute -inset-6 bg-gradient-to-r from-[#116B43] via-[#C9A227] to-[#116B43] rounded-3xl blur-2xl opacity-40 group-hover:opacity-70 transition-opacity duration-700 animate-pulse" />
-                  <div className="relative bg-[#39424C]/80 backdrop-blur-2xl p-6 sm:p-8 rounded-3xl border border-[#116B43]/50 shadow-[0_0_50px_rgba(17,107,67,0.6)]">
-                    <CompanyLogo variant="full" className="h-28 sm:h-36 md:h-44 w-auto" />
+                  <div className="relative bg-white p-6 sm:p-8 rounded-3xl border-2 border-[#116B43]/30 shadow-[0_0_40px_rgba(17,107,67,0.3)]">
+                    <CompanyLogo variant="full" className="h-28 sm:h-36 md:h-44 w-auto animate-fade-in" />
                   </div>
                 </div>
 
@@ -198,13 +197,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal, onOpe
                     <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-300" />
                   </a>
 
-                  <button
-                    onClick={onOpenProfileModal}
+                  <a
+                    href="/profile.pdf"
+                    target="_blank"
+                    rel="noreferrer"
                     className="px-8 py-4 rounded-2xl bg-[#C9A227] hover:bg-[#B08D1E] text-[#2B323A] font-black text-base sm:text-lg border border-[#C9A227]/40 shadow-[0_10px_30px_rgba(201,162,39,0.3)] hover:scale-105 hover:shadow-[0_15px_40px_rgba(201,162,39,0.5)] transition-all duration-300 flex items-center gap-3 cursor-pointer"
                   >
                     <FileText className="w-5 h-5 text-[#2B323A]" />
                     <span>بروفايل الشركة</span>
-                  </button>
+                  </a>
 
                   <button
                     onClick={onOpenCallModal}

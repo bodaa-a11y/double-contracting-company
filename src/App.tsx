@@ -17,14 +17,12 @@ import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { ServiceModal } from './components/ServiceModal';
 import { ProjectModal } from './components/ProjectModal';
 import { CallModal } from './components/CallModal';
-import { ProfileModal } from './components/ProfileModal';
 import { ServiceItem, ProjectItem } from './types';
 
 export default function App() {
   const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
   const [callModalOpen, setCallModalOpen] = useState(false);
-  const [profileModalOpen, setProfileModalOpen] = useState(false);
 
   return (
     <LenisProvider>
@@ -33,10 +31,7 @@ export default function App() {
         <ScrollProgress />
 
         {/* Floating Header */}
-        <Navbar
-          onOpenCallModal={() => setCallModalOpen(true)}
-          onOpenProfileModal={() => setProfileModalOpen(true)}
-        />
+        <Navbar onOpenCallModal={() => setCallModalOpen(true)} />
 
         {/* Main Content Layout */}
         <main>
@@ -96,11 +91,6 @@ export default function App() {
         <CallModal
           isOpen={callModalOpen}
           onClose={() => setCallModalOpen(false)}
-        />
-
-        <ProfileModal
-          isOpen={profileModalOpen}
-          onClose={() => setProfileModalOpen(false)}
         />
       </div>
     </LenisProvider>

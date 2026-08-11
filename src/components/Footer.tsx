@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
           {/* Column 1: Large Logo & Brief (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="h-16 w-16 p-1.5 rounded-2xl bg-white/15 border border-[#116B43]/50 shadow-[0_0_15px_rgba(17,107,67,0.5)] flex items-center justify-center">
+              <div className="h-16 w-16 p-1 rounded-2xl bg-white border border-[#116B43]/50 shadow-[0_0_15px_rgba(17,107,67,0.5)] flex items-center justify-center">
                 <CompanyLogo variant="full" showText={false} className="h-full w-full" />
               </div>
               <div className="flex flex-col">

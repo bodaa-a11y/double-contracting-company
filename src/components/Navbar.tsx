@@ -7,10 +7,9 @@ import { useLenis } from './LenisProvider';
 
 interface NavbarProps {
   onOpenCallModal: () => void;
-  onOpenProfileModal: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal, onOpenProfileModal }) => {
+export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal }) => {
   const lenis = useLenis();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -105,7 +104,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal, onOpenProfileMo
               }}
               className="group flex items-center gap-3 cursor-pointer"
             >
-              <div className="h-12 w-12 sm:h-14 sm:w-14 p-1.5 rounded-xl bg-white/15 backdrop-blur-md border border-[#116B43]/50 shadow-[0_0_15px_rgba(17,107,67,0.5)] group-hover:border-[#116B43] group-hover:shadow-[0_0_25px_rgba(17,107,67,0.85)] transition-all duration-300 flex items-center justify-center">
+              <div className="h-12 w-12 sm:h-14 sm:w-14 p-1 rounded-xl bg-white border border-[#116B43]/50 shadow-[0_0_15px_rgba(17,107,67,0.5)] group-hover:border-[#116B43] group-hover:shadow-[0_0_25px_rgba(17,107,67,0.85)] transition-all duration-300 flex items-center justify-center">
                 <CompanyLogo variant="full" showText={false} className="h-full w-full" />
               </div>
               <div className="flex flex-col">

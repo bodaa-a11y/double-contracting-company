@@ -50,7 +50,7 @@ export const TextScrollSection: React.FC = () => {
       </div>
 
       {/* Animated Horizontal Track Showcase */}
-      <motion.div style={{ opacity: opacityTransform }} className="w-full overflow-x-auto no-scrollbar py-6">
+      <motion.div style={{ opacity: opacityTransform }} className="w-full overflow-x-auto no-scrollbar pt-8 pb-20">
         <motion.div style={{ x: xTransform }} className="flex items-stretch gap-6 px-8 min-w-max">
           {TEXT_SCROLL_ITEMS.map((item, index) => (
             <motion.div
