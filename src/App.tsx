@@ -38,7 +38,6 @@ export default function App() {
           {/* Fullscreen Cinematic Hero with Apple-style Character Reveal Text Animation */}
           <HeroSection
             onOpenCallModal={() => setCallModalOpen(true)}
-            onOpenProfileModal={() => setProfileModalOpen(true)}
           />
 
           {/* Interactive Text Scroll Showcase for Construction Types */}
