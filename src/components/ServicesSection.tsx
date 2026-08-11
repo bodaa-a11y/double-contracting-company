@@ -13,6 +13,7 @@ import {
   Truck,
   ArrowLeft,
   CheckCircle,
+  Sparkles,
   X
 } from 'lucide-react';
 
