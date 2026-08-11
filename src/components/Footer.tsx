@@ -1,7 +1,7 @@
 import React from 'react';
 import { CompanyLogo } from './CompanyLogo';
 import { COMPANY_INFO, SERVICES } from '../data/companyData';
-import { Phone, Mail, MapPin, ArrowUp, Linkedin, Twitter, Instagram, Facebook } from 'lucide-react';
+import { Phone, Mail, MapPin, ArrowUp, Linkedin, Twitter, Facebook, Tiktok } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -37,8 +37,8 @@ export const Footer: React.FC = () => {
               <a href={COMPANY_INFO.social.twitter} target="_blank" rel="noreferrer" className="p-2.5 rounded-xl bg-white/10 hover:bg-[#116B43] text-white transition-colors" aria-label="Twitter">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href={COMPANY_INFO.social.instagram} target="_blank" rel="noreferrer" className="p-2.5 rounded-xl bg-white/10 hover:bg-[#116B43] text-white transition-colors" aria-label="Instagram">
-                <Instagram className="w-5 h-5" />
+              <a href={COMPANY_INFO.social.tiktok} target="_blank" rel="noreferrer" className="p-2.5 rounded-xl bg-white/10 hover:bg-[#116B43] text-white transition-colors" aria-label="TikTok">
+                <Tiktok className="w-5 h-5" />
               </a>
               <a href={COMPANY_INFO.social.facebook} target="_blank" rel="noreferrer" className="p-2.5 rounded-xl bg-white/10 hover:bg-[#116B43] text-white transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />

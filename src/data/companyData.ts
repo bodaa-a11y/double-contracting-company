@@ -10,10 +10,10 @@ export const COMPANY_INFO = {
   address: 'الخرج - طريق الملك فهد بن عبد العزيز - حي النهضة',
   whatsapp: '966555094382',
   social: {
-    linkedin: 'https://linkedin.com',
-    twitter: 'https://twitter.com',
-    instagram: 'https://instagram.com',
-    facebook: 'https://facebook.com',
+    linkedin: 'https://www.linkedin.com/in/شركة-رؤية-الريادة-للمقاولات-781408380?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    twitter: 'https://x.com/RAlriada',
+    facebook: 'https://www.facebook.com/Roaiat%20Alriada',
+    tiktok: 'https://www.tiktok.com/@roaiatalriada',
   },
   stats: {
     projectsCount: 250,
