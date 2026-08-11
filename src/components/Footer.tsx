@@ -1,7 +1,21 @@
 import React from 'react';
 import { CompanyLogo } from './CompanyLogo';
 import { COMPANY_INFO, SERVICES } from '../data/companyData';
-import { Phone, Mail, MapPin, ArrowUp, Linkedin, Twitter, Facebook, Tiktok } from 'lucide-react';
+import { Phone, Mail, MapPin, ArrowUp, Linkedin, Twitter, Facebook } from 'lucide-react';
+
+const TiktokIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+);
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -38,7 +52,7 @@ export const Footer: React.FC = () => {
                 <Twitter className="w-5 h-5" />
               </a>
               <a href={COMPANY_INFO.social.tiktok} target="_blank" rel="noreferrer" className="p-2.5 rounded-xl bg-white/10 hover:bg-[#116B43] text-white transition-colors" aria-label="TikTok">
-                <Tiktok className="w-5 h-5" />
+                <TiktokIcon className="w-5 h-5" />
               </a>
               <a href={COMPANY_INFO.social.facebook} target="_blank" rel="noreferrer" className="p-2.5 rounded-xl bg-white/10 hover:bg-[#116B43] text-white transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
