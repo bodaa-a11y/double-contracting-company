@@ -17,8 +17,11 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
 }) => {
   const lenis = useLenis();
 
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
   useEffect(() => {
     if (!project) return;
+    setActiveImageIndex(0);
     lenis?.stop();
     return () => {
       lenis?.start();
@@ -26,7 +29,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
   }, [project, lenis]);
 
   if (!project) return null;
-  const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   const images = project.gallery && project.gallery.length > 0 ? project.gallery : [project.image];
 
