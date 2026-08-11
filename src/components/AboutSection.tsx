@@ -98,7 +98,7 @@ export const AboutSection: React.FC = () => {
               {/* Main Image */}
               <div className="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl group">
                 <img
-                  src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b2?auto=format&fit=crop&w=1200&q=80"
+                  src="about_construction.jpg"
                   alt="موقع عمل شركة رؤية الريادة"
                   className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   loading="lazy"

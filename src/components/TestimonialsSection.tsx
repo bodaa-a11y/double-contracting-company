@@ -69,14 +69,8 @@ export const TestimonialsSection: React.FC = () => {
               </div>
 
               {/* Author Profile */}
-              <div className="pt-6 border-t border-gray-100 flex items-center gap-4">
-                <img
-                  src={test.avatar}
-                  alt={test.name}
-                  className="w-14 h-14 rounded-full object-cover border-2 border-[#116B43]"
-                  loading="lazy"
-                />
-                <div className="text-right">
+              <div className="pt-6 border-t border-gray-100 text-right">
+                <div>
                   <div className="font-extrabold text-[#39424C] text-lg font-heading">{test.name}</div>
                   <div className="text-xs text-[#116B43] font-bold">{test.role} - {test.company}</div>
                 </div>

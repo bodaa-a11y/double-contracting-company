@@ -1,28 +1,18 @@
-import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'motion/react';
+import React from 'react';
+import { motion } from 'motion/react';
 import { TEXT_SCROLL_ITEMS } from '../data/companyData';
-import { Sparkles, ArrowLeft, Building2 } from 'lucide-react';
+import { ArrowLeft, Building2 } from 'lucide-react';
 
 export const TextScrollSection: React.FC = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start end', 'end start'],
-  });
-
-  const xTransform = useTransform(scrollYProgress, [0, 1], ['10%', '-30%']);
-  const opacityTransform = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0.3, 1, 1, 0.3]);
-
   return (
     <section
-      ref={containerRef}
       className="relative py-24 bg-[#39424C] text-white overflow-hidden border-y border-[#116B43]/30"
     >
       {/* Background Decorative Lighting */}
       <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-[#116B43]/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 left-10 w-80 h-80 bg-[#C9A227]/15 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -45,22 +35,22 @@ export const TextScrollSection: React.FC = () => {
         </motion.h2>
 
         <p className="text-gray-300 max-w-2xl mx-auto text-base sm:text-lg font-medium">
-          مرّر واستكشف النماذج المعمارية والقطاعات الرئيسية التي نبنيها بأعلى درجات الاحترافية والتطور الهيكلي.
+          استكشف النماذج المعمارية والقطاعات الرئيسية التي نبنيها بأعلى درجات الاحترافية والتطور الهيكلي.
         </p>
       </div>
 
-      {/* Animated Horizontal Track Showcase */}
-      <motion.div style={{ opacity: opacityTransform }} className="w-full overflow-x-auto no-scrollbar pt-8 pb-20">
-        <motion.div style={{ x: xTransform }} className="flex items-stretch gap-6 px-8 min-w-max">
+      {/* Static Grid Showcase */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {TEXT_SCROLL_ITEMS.map((item, index) => (
             <motion.div
               key={item.id}
-              initial={{ opacity: 0, scale: 0.9, y: 30 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              viewport={{ once: true, margin: '-50px' }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -12, scale: 1.02 }}
-              className="w-80 sm:w-96 rounded-3xl overflow-hidden glass-panel-dark border border-white/15 hover:border-[#C9A227]/60 shadow-2xl transition-all duration-500 group flex flex-col justify-between"
+              whileHover={{ y: -10, scale: 1.02 }}
+              className="rounded-3xl overflow-hidden glass-panel-dark border border-white/15 hover:border-[#C9A227]/60 shadow-2xl transition-all duration-500 group flex flex-col justify-between"
             >
               <div className="relative h-60 overflow-hidden">
                 <img
@@ -96,8 +86,8 @@ export const TextScrollSection: React.FC = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </section>
   );
 };
