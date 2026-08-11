@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { PROJECTS } from '../data/companyData';
 import { ProjectItem } from '../types';
-import { MapPin, Maximize2, Calendar, Eye, ArrowLeft, Sparkles, Building2 } from 'lucide-react';
+import { MapPin, Maximize2, Calendar, Eye, ArrowLeft, Building2 } from 'lucide-react';
 
 interface ProjectsSectionProps {
   onSelectProject: (project: ProjectItem) => void;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useInView } from 'motion/react';
 import { STATS } from '../data/companyData';
-import { CheckCircle2, Users, Award, HardHat, Sparkles } from 'lucide-react';
+import { CheckCircle2, Users, Award, HardHat } from 'lucide-react';
 
 const iconMap: Record<string, React.ReactNode> = {
   CheckCircle2: <CheckCircle2 className="w-8 h-8 text-[#C9A227]" />,
@@ -69,7 +69,7 @@ export const StatsSection: React.FC = () => {
 
               {/* Icon */}
               <div className="inline-flex p-4 rounded-2xl bg-[#116B43]/30 border border-[#C9A227]/40 mb-4 group-hover:scale-110 transition-transform duration-300">
-                {iconMap[stat.icon] || <Sparkles className="w-8 h-8 text-[#C9A227]" />}
+                {iconMap[stat.icon] || <CheckCircle2 className="w-8 h-8 text-[#C9A227]" />}
               </div>
 
               {/* Number */}

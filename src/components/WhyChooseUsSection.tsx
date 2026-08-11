@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { VALUES } from '../data/companyData';
-import { ShieldCheck, Sparkles, UserCheck, CheckSquare, Target, Clock, Award } from 'lucide-react';
+import { ShieldCheck, UserCheck, CheckSquare, Target, Clock, Award } from 'lucide-react';
 
 const iconMap: Record<string, React.ReactNode> = {
   ShieldCheck: <ShieldCheck className="w-6 h-6 text-[#C9A227]" />,
-  Sparkles: <Sparkles className="w-6 h-6 text-[#C9A227]" />,
+  Award: <Award className="w-6 h-6 text-[#C9A227]" />,
   UserCheck: <UserCheck className="w-6 h-6 text-[#C9A227]" />,
   CheckSquare: <CheckSquare className="w-6 h-6 text-[#C9A227]" />,
   Target: <Target className="w-6 h-6 text-[#C9A227]" />,

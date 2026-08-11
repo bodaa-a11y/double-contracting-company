@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { COMPANY_INFO } from '../data/companyData';
-import { Phone, Mail, MapPin, Send, CheckCircle2, Clock, Building2, Sparkles, AlertCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, CheckCircle2, Clock, Building2, AlertCircle } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -84,7 +84,7 @@ export const ContactSection: React.FC = () => {
             className="lg:col-span-7 bg-white/5 backdrop-blur-xl p-8 sm:p-10 rounded-3xl border border-white/15 shadow-2xl text-right"
           >
             <h3 className="text-2xl font-black font-heading text-white mb-6 flex items-center gap-3">
-              <Sparkles className="w-6 h-6 text-[#C9A227]" />
+              <Building2 className="w-6 h-6 text-[#C9A227]" />
               <span>طلب تسعيرة أو استشارة هندسية</span>
             </h3>
 

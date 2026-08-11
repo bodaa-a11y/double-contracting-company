@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ServiceItem } from '../types';
-import { X, CheckCircle, ArrowLeft, PhoneCall, ShieldCheck, Sparkles } from 'lucide-react';
+import { X, CheckCircle, ArrowLeft, PhoneCall, ShieldCheck } from 'lucide-react';
 import { COMPANY_INFO } from '../data/companyData';
 import { useLenis } from './LenisProvider';
 
@@ -83,7 +83,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({
           <div className="p-6 sm:p-8 space-y-6 text-right">
             <div>
               <h4 className="text-lg font-bold text-white mb-2 font-heading flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-[#C9A227]" />
+                <ShieldCheck className="w-5 h-5 text-[#C9A227]" />
                 <span>عن الخدمة</span>
               </h4>
               <p className="text-gray-300 text-base leading-relaxed">

@@ -13,7 +13,6 @@ import {
   Truck,
   ArrowLeft,
   CheckCircle,
-  Sparkles,
   X
 } from 'lucide-react';
 
@@ -49,7 +48,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
             viewport={{ once: true }}
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-[#C9A227] text-sm font-extrabold border border-[#C9A227]/30"
           >
-            <Sparkles className="w-4 h-4" />
+            <Building2 className="w-4 h-4" />
             <span>خدماتنا المتخصصة</span>
           </motion.div>
 
@@ -105,19 +104,19 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                     {service.badge}
                   </div>
                 )}
-
-                {/* Floating Icon Box */}
-                <div className="absolute -bottom-6 right-6 p-3.5 rounded-2xl bg-[#39424C] border border-[#C9A227]/50 text-[#C9A227] shadow-2xl group-hover:bg-[#116B43] group-hover:text-white transition-all duration-300">
-                  {iconMap[service.iconName] || <Building2 className="w-8 h-8" />}
-                </div>
               </div>
 
               {/* Card Body */}
-              <div className="p-6 pt-10 text-right flex-1 flex flex-col justify-between">
+              <div className="p-6 text-right flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-black text-white font-heading mb-2 group-hover:text-[#C9A227] transition-colors">
-                    {service.title}
-                  </h3>
+                  <div className="flex items-center justify-between gap-3 mb-2">
+                    <h3 className="text-2xl font-black text-white font-heading group-hover:text-[#C9A227] transition-colors">
+                      {service.title}
+                    </h3>
+                    <div className="p-2 rounded-xl bg-white/10 text-[#C9A227] group-hover:bg-[#116B43] group-hover:text-white transition-all duration-300 shrink-0">
+                      {iconMap[service.iconName] || <Building2 className="w-5 h-5" />}
+                    </div>
+                  </div>
                   <p className="text-[#C9A227] text-xs font-bold mb-3">
                     {service.subtitle}
                   </p>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { CompanyLogo } from './CompanyLogo';
-import { ArrowLeft, Building, ChevronDown, ShieldCheck, Sparkles, PhoneCall, FileText } from 'lucide-react';
+import { ArrowLeft, Building, ChevronDown, ShieldCheck, PhoneCall, FileText } from 'lucide-react';
 import { COMPANY_INFO } from '../data/companyData';
 
 interface HeroSectionProps {
@@ -102,7 +102,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
           transition={{ duration: 0.8, delay: 0.2 }}
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-[#C9A227]/40 shadow-2xl mb-8"
         >
-          <Sparkles className="w-4 h-4 text-[#C9A227] animate-spin" />
+          <Building className="w-4 h-4 text-[#C9A227]" />
           <span className="text-xs sm:text-sm font-bold text-white tracking-wide">
             الريادة والتميز المعماري في المقاولات العامة والتطوير العقاري
           </span>
@@ -259,7 +259,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
 
           <div className="bg-white/5 backdrop-blur-md p-3.5 rounded-2xl border border-white/10 text-right flex items-center gap-3">
             <div className="p-2 rounded-xl bg-[#116B43]/30 text-[#C9A227]">
-              <Sparkles className="w-5 h-5" />
+              <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
               <div className="text-white font-bold text-sm">100% تسليم بالموعد</div>

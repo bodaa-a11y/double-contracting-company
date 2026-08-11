@@ -37,7 +37,7 @@ export const SERVICES: ServiceItem[] = [
       'تطبيق أعلى متطلبات الأمان واختبارات ضبط الجودة الدولية'
     ],
     features: ['إشراف هندسي صارم', 'التزام كامل بالجداول الزمنية', 'تقنيات بناء حديثة'],
-    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb186a5b2?auto=format&fit=crop&w=1200&q=80',
+    image: '/general_contracting.jpg',
     badge: 'الأكثر طلباً'
   },
   {
@@ -343,7 +343,7 @@ export const VALUES: ValueItem[] = [
     id: 'quality',
     title: 'الجودة',
     description: 'نعتمد أعلى المعايير الهندسية في اختيار المواد والتنفيذ الفعلي لضمان صلابة واستدامة أصول المشاريع.',
-    icon: 'Sparkles',
+    icon: 'Award',
     stepNumber: '02'
   },
   {
