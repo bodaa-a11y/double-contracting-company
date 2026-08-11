@@ -198,7 +198,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
                   </a>
 
                   <a
-                    href="profile.pdf"
+                    href="/profile.pdf"
                     target="_blank"
                     rel="noreferrer"
                     className="px-8 py-4 rounded-2xl bg-[#C9A227] hover:bg-[#B08D1E] text-[#2B323A] font-black text-base sm:text-lg border border-[#C9A227]/40 shadow-[0_10px_30px_rgba(201,162,39,0.3)] hover:scale-105 hover:shadow-[0_15px_40px_rgba(201,162,39,0.5)] transition-all duration-300 flex items-center gap-3 cursor-pointer"

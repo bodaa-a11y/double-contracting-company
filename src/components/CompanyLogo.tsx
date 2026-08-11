@@ -17,7 +17,7 @@ export const CompanyLogo: React.FC<LogoProps> = ({
     return (
       <div className={`relative overflow-hidden select-none bg-white rounded-lg ${className}`} style={{ aspectRatio: '1/1' }}>
         <img
-          src="logo.png"
+          src="/logo.png"
           alt="شعار شركة رؤية الريادة"
           className="absolute inset-0 w-full h-full object-contain"
           style={{
@@ -32,7 +32,7 @@ export const CompanyLogo: React.FC<LogoProps> = ({
   return (
     <div className={`inline-flex items-center justify-center select-none ${className}`}>
       <img
-        src="logo.png"
+        src="/logo.png"
         alt="شركة رؤية الريادة للمقاولات والتطوير العقاري"
         className={`w-full h-full object-contain`}
       />

@@ -144,7 +144,7 @@ export const SERVICES: ServiceItem[] = [
       'تقديم عقود الصيانة والتأمين للمعدات والآلات'
     ],
     features: ['سلسلة إمداد موثوقة', 'أسعار تنافسية مباشرة', 'جودة معتمدة حاصلة على ISO'],
-    image: 'supply_materials.jpg'
+    image: '/supply_materials.jpg'
   }
 ];
 
