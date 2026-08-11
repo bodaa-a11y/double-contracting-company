@@ -145,7 +145,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal }) => {
             {/* Call Button & Mobile Menu Toggle */}
             <div className="flex items-center gap-3">
               <a
-                href="/profile.pdf"
+                href="profile.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="hidden sm:flex px-4 py-2.5 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-extrabold border border-white/20 shadow-lg hover:border-[#C9A227] transition-all duration-300 items-center gap-2 cursor-pointer"
@@ -203,7 +203,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal }) => {
 
               <div className="pt-4 border-t border-white/10 flex flex-col gap-3">
                 <a
-                  href="/profile.pdf"
+                  href="profile.pdf"
                   target="_blank"
                   rel="noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
