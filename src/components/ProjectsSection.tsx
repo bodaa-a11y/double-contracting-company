@@ -14,8 +14,8 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
   const categories = [
     { id: 'all', label: 'الكل' },
     { id: 'villas', label: 'الفلل والقصور' },
-    { id: 'towers', label: 'الأبراج والنطحات' },
-    { id: 'malls', label: 'المولات والتجاري' },
+    { id: 'finishing', label: 'التشطيبات والديكور' },
+    { id: 'towers', label: 'الأبراج والمجمعات' },
     { id: 'residential', label: 'المجمعات السكنية' },
     { id: 'infrastructure', label: 'البنية التحتية' },
   ];
