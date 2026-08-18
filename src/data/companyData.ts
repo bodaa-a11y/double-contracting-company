@@ -195,7 +195,38 @@ export const TEXT_SCROLL_ITEMS = [
   }
 ];
 
-export const PROJECTS: ProjectItem[] = [];
+export const PROJECTS: ProjectItem[] = [
+  {
+    id: 'proj-modern-villas',
+    title: 'مشروع الفلل المودرن العصرية',
+    category: 'villas',
+    categoryLabel: 'مجمع الفلل والقصور',
+    location: '',
+    area: '25,000 م²',
+    completionYear: '2025',
+    client: 'مجموعة النخبة العقارية',
+    value: '85,000,000 ريال',
+    image: '/projects/nudra_1.jpg',
+    gallery: [
+      '/projects/nudra_1.jpg',
+      '/projects/nudra_2.jpg',
+      '/projects/nudra_3.jpg',
+      '/projects/nudra_extracted_1.jpeg',
+      '/projects/nudra_extracted_2.jpeg',
+      '/projects/nudra_extracted_3.jpeg',
+      '/projects/nudra_extracted_4.jpeg',
+      '/projects/nudra_extracted_5.jpeg',
+      '/projects/nudra_extracted_6.jpeg',
+      '/projects/nudra_extracted_7.jpeg',
+      '/projects/nudra_extracted_8.jpeg',
+      '/projects/nudra_extracted_9.jpeg',
+      '/projects/nudra_extracted_10.jpeg',
+      '/projects/nudra_pdf_page_1.jpg'
+    ],
+    description: 'مشروع الفلل المودرن العصرية يجسد أعلى درجات الفخامة والرفاهية والواجهات المعمارية المودرن مع المساحات الخضراء والإنارة الليلية.',
+    keyFeatures: ['تصميم معماري مودرن عصري', 'تشطيبات فاخرة عالية الجودة', 'حدائق خاصة ومساحات خضراء', 'معرض صور شامل']
+  }
+];
 
 export const STATS: StatItem[] = [
   {
