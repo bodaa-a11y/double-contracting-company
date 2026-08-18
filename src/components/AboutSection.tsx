@@ -60,7 +60,7 @@ export const AboutSection: React.FC = () => {
             <div className="space-y-3 pt-2">
               <div className="flex items-center gap-3 text-gray-800 font-bold">
                 <CheckCircle2 className="w-5 h-5 text-[#116B43] flex-shrink-0" />
-                <span>إشراف هندسي متكامل من طاقم يمتلك خبرة تتجاوز 20 عاماً</span>
+                <span>إشراف هندسي متكامل من طاقم يمتلك خبرة سنتين من التميز الإنشائي</span>
               </div>
               <div className="flex items-center gap-3 text-gray-800 font-bold">
                 <CheckCircle2 className="w-5 h-5 text-[#116B43] flex-shrink-0" />
@@ -68,7 +68,7 @@ export const AboutSection: React.FC = () => {
               </div>
               <div className="flex items-center gap-3 text-gray-800 font-bold">
                 <CheckCircle2 className="w-5 h-5 text-[#116B43] flex-shrink-0" />
-                <span>حاصلون على شهادات الاعتماد والآيزو في السلامة وجودة التنفيذ الإنشائي</span>
+                <span>حاصلون على أعلى شهادات الاعتماد في السلامة وجودة التنفيذ الإنشائي</span>
               </div>
             </div>
 
@@ -98,9 +98,9 @@ export const AboutSection: React.FC = () => {
               {/* Main Image */}
               <div className="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl group">
                 <img
-                  src="/about_construction.jpg"
-                  alt="موقع عمل شركة رؤية الريادة"
-                  className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  src="/projects/villa_real_47.jpg"
+                  alt="موقع عمل مشروع شركة رؤية الريادة للمقاولات"
+                  className="w-full h-[320px] sm:h-[450px] lg:h-[500px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
@@ -128,10 +128,10 @@ export const AboutSection: React.FC = () => {
                 className="absolute -bottom-6 -left-6 bg-[#39424C] text-white p-5 rounded-2xl border border-[#C9A227]/40 shadow-2xl flex items-center gap-4 text-right"
               >
                 <div className="p-3.5 rounded-xl bg-[#C9A227] text-[#39424C] font-black text-2xl font-heading shadow-md">
-                  20+
+                  2+
                 </div>
                 <div>
-                  <div className="font-black text-base text-white">عاماً من التميز والابتكار</div>
+                  <div className="font-black text-base text-white">سنتين من التميز والابتكار</div>
                    <div className="text-[#C9A227] text-xs font-semibold">شركة رؤية الريادة للمقاولات والتطوير العقاري</div>
                 </div>
               </motion.div>

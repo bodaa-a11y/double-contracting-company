@@ -89,34 +89,23 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
               {/* Shimmer Glowing Gradient Top Line */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#C9A227] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-              {/* Card Image Header */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#39424C] via-[#39424C]/60 to-transparent" />
-
-                {service.badge && (
-                  <div className="absolute top-4 right-4 bg-[#116B43] text-white text-xs font-bold px-3 py-1 rounded-full border border-[#C9A227]/50 shadow-lg">
-                    {service.badge}
-                  </div>
-                )}
-              </div>
-
               {/* Card Body */}
-              <div className="p-6 text-right flex-1 flex flex-col justify-between">
+              <div className="p-7 text-right flex-1 flex flex-col justify-between">
                 <div>
-                  <div className="flex items-center justify-between gap-3 mb-2">
-                    <h3 className="text-2xl font-black text-white font-heading group-hover:text-[#C9A227] transition-colors">
-                      {service.title}
-                    </h3>
-                    <div className="p-2 rounded-xl bg-white/10 text-[#C9A227] group-hover:bg-[#116B43] group-hover:text-white transition-all duration-300 shrink-0">
-                      {iconMap[service.iconName] || <Building2 className="w-5 h-5" />}
+                  <div className="flex items-center justify-between gap-3 mb-4">
+                    <div className="p-3.5 rounded-2xl bg-white/10 text-[#C9A227] group-hover:bg-[#116B43] group-hover:text-white border border-white/10 shadow-lg transition-all duration-300">
+                      {iconMap[service.iconName] || <Building2 className="w-8 h-8" />}
                     </div>
+                    {service.badge && (
+                      <span className="bg-[#116B43] text-white text-xs font-bold px-3 py-1 rounded-full border border-[#C9A227]/50 shadow-md">
+                        {service.badge}
+                      </span>
+                    )}
                   </div>
+
+                  <h3 className="text-2xl font-black text-white font-heading mb-1 group-hover:text-[#C9A227] transition-colors">
+                    {service.title}
+                  </h3>
                   <p className="text-[#C9A227] text-xs font-bold mb-3">
                     {service.subtitle}
                   </p>

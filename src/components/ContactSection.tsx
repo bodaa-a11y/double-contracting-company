@@ -182,7 +182,6 @@ export const ContactSection: React.FC = () => {
                       <option value="التشطيبات والديكور">التشطيبات والديكور</option>
                       <option value="إدارة المشاريع">إدارة المشاريع</option>
                       <option value="البنية التحتية">البنية التحتية</option>
-                      <option value="الأعمال التجارية والتوريد">الأعمال التجارية والتوريد</option>
                     </select>
                   </div>
                 </div>
@@ -234,11 +233,8 @@ export const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <div className="text-xs text-[#C9A227] font-bold">الهاتف المباشر</div>
-                  <a href={`tel:${COMPANY_INFO.phone}`} className="text-lg font-black text-white hover:text-[#C9A227] dir-ltr block text-right">
-                    {COMPANY_INFO.phone}
-                  </a>
-                  <a href={`tel:${COMPANY_INFO.phoneAlt}`} className="text-sm font-bold text-gray-300 hover:text-[#C9A227] dir-ltr block text-right">
-                    {COMPANY_INFO.phoneAlt}
+                  <a href={`tel:${COMPANY_INFO.phone}`} dir="ltr" className="text-lg font-black text-white hover:text-[#C9A227] inline-block">
+                    {COMPANY_INFO.phoneDisplay}
                   </a>
                 </div>
               </div>
@@ -268,30 +264,45 @@ export const ContactSection: React.FC = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="p-3.5 rounded-2xl bg-[#116B43] text-white shadow-lg">
+                <div className="p-3.5 rounded-2xl bg-[#116B43] text-white shadow-lg shrink-0 mt-1">
                   <Clock className="w-6 h-6" />
                 </div>
-                <div>
-                  <div className="text-xs text-[#C9A227] font-bold">ساعات العمل الرسمية</div>
-                  <p className="text-sm font-medium text-gray-200">
-                    الأحد - الخميس: 8:00 صباحاً - 5:00 مساءً
-                  </p>
+                <div className="flex-1">
+                  <div className="text-xs text-[#C9A227] font-extrabold mb-2">مواعيد وساعات العمل الرسمية (طوال الأسبوع)</div>
+                  <div className="space-y-1.5 bg-white/5 p-3.5 rounded-2xl border border-white/10 text-xs">
+                    {COMPANY_INFO.workingHours.details.map((item, idx) => (
+                      <div key={idx} className="flex items-center justify-between gap-2 border-b border-white/5 pb-1 last:border-b-0 last:pb-0">
+                        <span className="font-bold text-white min-w-[60px]">{item.day}:</span>
+                        <span className={`font-semibold ${item.status === 'closed' ? 'text-rose-400 font-bold' : item.status === 'half' ? 'text-amber-300' : 'text-gray-200'}`}>
+                          {item.hours}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Google Maps Placeholder Frame */}
+            {/* Google Maps Frame */}
             <div className="rounded-3xl overflow-hidden border border-white/20 shadow-2xl relative h-64 bg-slate-800 group">
               <iframe
-                title="موقع شركة رؤية الريادة للمقاولات"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.562728!2d46.6375!3d24.8125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ4JzQ1LjAiTiA0NsKwMzgnMTU2LjAiRQ!5e0!3m2!1sar!2s!4v1650000000000!5m2!1sar!2s"
-                className="w-full h-full filter grayscale contrast-125 opacity-70 group-hover:opacity-100 transition-opacity duration-500"
+                title="موقع شركة رؤية الريادة للمقاولات - الخرج"
+                src="https://maps.google.com/maps?q=24.1612991,47.330374&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                className="w-full h-full filter grayscale contrast-125 opacity-80 group-hover:opacity-100 transition-opacity duration-500"
                 loading="lazy"
               />
-              <div className="absolute top-3 right-3 bg-[#39424C]/90 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/20 text-xs font-bold text-white flex items-center gap-2">
+              <div className="absolute top-3 right-3 bg-[#39424C]/95 backdrop-blur-md px-3.5 py-2 rounded-xl border border-white/20 text-xs font-bold text-white flex items-center gap-2 shadow-lg">
                 <MapPin className="w-4 h-4 text-[#C9A227]" />
-                <span>الرياض - حي الصحافة</span>
+                <span>موقع الشركة في الخرج</span>
               </div>
+              <a
+                href={COMPANY_INFO.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bottom-3 left-3 bg-[#116B43] hover:bg-[#C9A227] hover:text-[#39424C] text-white px-4 py-2 rounded-xl border border-white/20 text-xs font-extrabold flex items-center gap-2 shadow-xl transition-all duration-300 group/btn"
+              >
+                <span>الفتح في خرائط Google 🗺️</span>
+              </a>
             </div>
 
           </motion.div>

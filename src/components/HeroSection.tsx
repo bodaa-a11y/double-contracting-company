@@ -188,10 +188,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
                 </p>
 
                 {/* Call to Action Buttons */}
-                <div className="flex flex-wrap items-center justify-center gap-4">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 w-full max-w-md sm:max-w-none mx-auto">
                   <a
                     href="#projects"
-                    className="px-8 py-4 rounded-2xl bg-gradient-to-r from-[#116B43] to-[#0D5233] text-white font-black text-base sm:text-lg shadow-[0_10px_30px_rgba(17,107,67,0.5)] border border-[#C9A227]/50 hover:scale-105 hover:shadow-[0_15px_40px_rgba(201,162,39,0.5)] transition-all duration-300 flex items-center gap-3 group cursor-pointer"
+                    className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-gradient-to-r from-[#116B43] to-[#0D5233] text-white font-black text-sm sm:text-lg shadow-[0_10px_30px_rgba(17,107,67,0.5)] border border-[#C9A227]/50 hover:scale-105 hover:shadow-[0_15px_40px_rgba(201,162,39,0.5)] transition-all duration-300 flex items-center justify-center gap-2.5 sm:gap-3 group cursor-pointer"
                   >
                     <span>استكشف المشاريع</span>
                     <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-300" />
@@ -201,7 +201,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
                     href="/profile.pdf"
                     target="_blank"
                     rel="noreferrer"
-                    className="px-8 py-4 rounded-2xl bg-[#C9A227] hover:bg-[#B08D1E] text-[#2B323A] font-black text-base sm:text-lg border border-[#C9A227]/40 shadow-[0_10px_30px_rgba(201,162,39,0.3)] hover:scale-105 hover:shadow-[0_15px_40px_rgba(201,162,39,0.5)] transition-all duration-300 flex items-center gap-3 cursor-pointer"
+                    className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-[#C9A227] hover:bg-[#B08D1E] text-[#2B323A] font-black text-sm sm:text-lg border border-[#C9A227]/40 shadow-[0_10px_30px_rgba(201,162,39,0.3)] hover:scale-105 hover:shadow-[0_15px_40px_rgba(201,162,39,0.5)] transition-all duration-300 flex items-center justify-center gap-2.5 sm:gap-3 cursor-pointer"
                   >
                     <FileText className="w-5 h-5 text-[#2B323A]" />
                     <span>بروفايل الشركة</span>
@@ -209,7 +209,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
 
                   <button
                     onClick={onOpenCallModal}
-                    className="px-8 py-4 rounded-2xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-black text-base sm:text-lg border border-white/30 hover:border-[#C9A227] shadow-xl transition-all duration-300 flex items-center gap-3 cursor-pointer"
+                    className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-black text-sm sm:text-lg border border-white/30 hover:border-[#C9A227] shadow-xl transition-all duration-300 flex items-center justify-center gap-2.5 sm:gap-3 cursor-pointer"
                   >
                     <PhoneCall className="w-5 h-5 text-[#C9A227]" />
                     <span>اطلب استشارة مجانية</span>
@@ -242,7 +242,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-white font-bold text-sm">20+ سنة خبرة</div>
+              <div className="text-white font-bold text-sm">2+ سنوات خبرة</div>
               <div className="text-gray-400 text-xs">ثقة مستمرة</div>
             </div>
           </div>
@@ -252,7 +252,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCallModal }) => 
               <Building className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-white font-bold text-sm">250+ مشروع منجز</div>
+              <div className="text-white font-bold text-sm">25+ مشروع منجز</div>
               <div className="text-gray-400 text-xs">جودة معتمدة</div>
             </div>
           </div>

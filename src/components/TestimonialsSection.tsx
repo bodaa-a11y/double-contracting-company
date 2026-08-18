@@ -17,7 +17,7 @@ export const TestimonialsSection: React.FC = () => {
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#116B43]/10 text-[#116B43] text-sm font-extrabold border border-[#116B43]/20"
           >
             <MessageSquare className="w-4 h-4 text-[#C9A227]" />
-            <span>آراء العملاء والشركاء</span>
+            <span>آراء العملاء الحقيقية من موثقي جوجل</span>
           </motion.div>
 
           <motion.h2
@@ -27,7 +27,7 @@ export const TestimonialsSection: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-3xl sm:text-5xl font-black text-[#39424C] font-heading tracking-tight"
           >
-            شهادات نعتزُ بها من قادة الأعمال وكبار المستثمرين
+            تقييمات وثقة عملاء شركة رؤية الريادة على الخريطة
           </motion.h2>
 
           <motion.p
@@ -37,12 +37,12 @@ export const TestimonialsSection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-gray-600 text-base sm:text-lg font-medium"
           >
-            الانطباعات الصادقة لشركائنا تعكس مدى التزام شركة رؤية الريادة بأعلى معايير الإنجاز والجودة الميدانية.
+            آراء وانطباعات حقيقية وموثقة 100% لعملائنا الكرام من حسابنا الرسمي على مراجعات خرائط جوجل (Google Maps).
           </motion.p>
         </div>
 
-        {/* Testimonials Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Testimonials Cards Grid (2x2 Grid) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {TESTIMONIALS.map((test, index) => (
             <motion.div
               key={test.id}
@@ -53,27 +53,42 @@ export const TestimonialsSection: React.FC = () => {
               whileHover={{ y: -8 }}
               className="bg-white rounded-3xl p-8 border border-gray-200 shadow-xl hover:border-[#116B43] hover:shadow-2xl transition-all duration-300 relative text-right flex flex-col justify-between"
             >
-              <div className="mb-6">
-                <Quote className="w-10 h-10 text-[#116B43]/20 mb-4" />
+              <div>
+                <div className="flex items-center justify-between gap-4 mb-4">
+                  <div className="flex items-center gap-3">
+                    <img
+                      src={test.avatar}
+                      alt={test.name}
+                      className="w-12 h-12 rounded-full border-2 border-[#116B43]/30 object-cover shadow-md"
+                    />
+                    <div>
+                      <div className="font-extrabold text-[#39424C] text-lg font-heading">{test.name}</div>
+                      <div className="text-xs text-[#116B43] font-bold">{test.company}</div>
+                    </div>
+                  </div>
 
-                {/* Stars Rating */}
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(test.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-[#C9A227] text-[#C9A227]" />
-                  ))}
+                  {/* Stars Rating */}
+                  <div className="flex items-center gap-1 bg-amber-50 px-3 py-1.5 rounded-full border border-amber-200">
+                    {[...Array(test.rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-[#C9A227] text-[#C9A227]" />
+                    ))}
+                  </div>
                 </div>
 
-                <p className="text-gray-700 text-base leading-relaxed font-medium italic">
+                <p className="text-gray-700 text-base leading-relaxed font-medium mb-4 bg-gray-50/70 p-4 rounded-2xl border border-gray-100">
                   "{test.comment}"
                 </p>
-              </div>
 
-              {/* Author Profile */}
-              <div className="pt-6 border-t border-gray-100 text-right">
-                <div>
-                  <div className="font-extrabold text-[#39424C] text-lg font-heading">{test.name}</div>
-                  <div className="text-xs text-[#116B43] font-bold">{test.role} - {test.company}</div>
-                </div>
+                {/* Owner Reply Box */}
+                {test.ownerReply && (
+                  <div className="mt-4 p-4 rounded-2xl bg-[#116B43]/10 border border-[#116B43]/20 text-xs">
+                    <div className="font-black text-[#116B43] mb-1 flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-[#116B43]" />
+                      <span>رد شركة رؤية الريادة للمقاولات (المالك):</span>
+                    </div>
+                    <p className="text-gray-800 font-bold">{test.ownerReply}</p>
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}

@@ -3,23 +3,40 @@ import { ServiceItem, ProjectItem, TestimonialItem, PartnerItem, StatItem, Value
 export const COMPANY_INFO = {
   name: 'شركة رؤية الريادة للمقاولات والتطوير العقاري',
   tagline: 'نبني المستقبل بجودة، احترافية، وثقة',
-  shortDesc: 'صرح رائد في مجالات المقاولات والتطوير العقاري، يمتلك عقوداً من الخبرة في تنفيذ المشاريع الضخمة والبنى التحتية الشاملة بأعلى معايير الجودة العالمية.',
-  phone: '+966 55 509 4382',
-  phoneAlt: '7048788603',
+  shortDesc: 'صرح رائد في مجالات المقاولات والتطوير العقاري، يمتلك سنتين من الخبرة والتميز الإنشائي في تنفيذ المشاريع الضخمة والبنى التحتية الشاملة بأعلى معايير الجودة العالمية.',
+  phone: '+966555094382',
+  phoneDisplay: '055 509 4382',
+  phoneAlt: '+966538788603',
+  phoneAltDisplay: '053 878 8603',
   email: 'roaiatalriada@gmail.com',
   address: 'الخرج - طريق الملك فهد بن عبد العزيز - حي النهضة',
+  mapUrl: 'https://maps.app.goo.gl/V5SMPb4QnMiQXcoc8',
   whatsapp: '966555094382',
   social: {
     linkedin: 'https://www.linkedin.com/in/شركة-رؤية-الريادة-للمقاولات-781408380?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     twitter: 'https://x.com/RAlriada',
-    facebook: 'https://www.facebook.com/Roaiat%20Alriada',
+    facebook: 'https://www.facebook.com/profile.php?id=61579940692741&locale=ar_AR',
     tiktok: 'https://www.tiktok.com/@roaiatalriada',
   },
+  workingHours: {
+    weekdays: 'السبت إلى الأربعاء: فترتان (9:00 ص - 12:00 ظهراً) & (4:00 عصراً - 9:00 مساءً)',
+    thursday: 'الخميس: نصف يوم (9:00 صباحاً - 1:00 ظهراً)',
+    friday: 'الجمعة: العطلة الأسبوعية (مغلق)',
+    details: [
+      { day: 'السبت', hours: 'فترتان: (9:00 ص - 12:00 ظ) | (4:00 ع - 9:00 م)', status: 'open' },
+      { day: 'الأحد', hours: 'فترتان: (9:00 ص - 12:00 ظ) | (4:00 ع - 9:00 م)', status: 'open' },
+      { day: 'الاثنين', hours: 'فترتان: (9:00 ص - 12:00 ظ) | (4:00 ع - 9:00 م)', status: 'open' },
+      { day: 'الثلاثاء', hours: 'فترتان: (9:00 ص - 12:00 ظ) | (4:00 ع - 9:00 م)', status: 'open' },
+      { day: 'الأربعاء', hours: 'فترتان: (9:00 ص - 12:00 ظ) | (4:00 ع - 9:00 م)', status: 'open' },
+      { day: 'الخميس', hours: 'فترة واحدة (نصف يوم): (9:00 ص - 1:00 ظ)', status: 'half' },
+      { day: 'الجمعة', hours: 'العطلة الأسبوعية (مغلق)', status: 'closed' }
+    ]
+  },
   stats: {
-    projectsCount: 250,
-    clientsCount: 500,
-    yearsExperience: 20,
-    employeesCount: 1000,
+    projectsCount: 25,
+    clientsCount: 150,
+    yearsExperience: 2,
+    employeesCount: 5,
   }
 };
 
@@ -99,7 +116,7 @@ export const SERVICES: ServiceItem[] = [
       'العزل المائي والحراري المتقدم مع الضمان الشامل'
     ],
     features: ['خامات عالمية', 'دقة تنفيدية عالية', 'إضاءة معمارية ساحرة'],
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80'
+    image: '/finishing_1.jpg'
   },
   {
     id: 'project-management',
@@ -130,21 +147,6 @@ export const SERVICES: ServiceItem[] = [
     ],
     features: ['معدات ثقيلة متطورة', 'معايير أمان حكومية', 'متانة تشغيلية مستدامة'],
     image: '/infrastructure_work.jpg'
-  },
-  {
-    id: 'commercial-trading',
-    title: 'الأعمال التجارية والتوريد',
-    subtitle: 'استيراد وتوريد أجود مواد البناء والمعدات الهندسية',
-    iconName: 'Truck',
-    description: 'ذراع تجاري متكامل لتوريد حديد التسليح، الإسمنت، المعدات الثقيلة، وأنظمة السلامة المعتمدة دولياً لضمان استمرارية توريد المشاريع.',
-    detailedScope: [
-      'توريد الخرسانة الجاهزة والمواد الإنشائية الأساسية',
-      'توفير الآليات الهندسية الثقيلة والرافعات البرجية',
-      'استيراد التجهيزات الكهربائية والمكانيكية المعيارية',
-      'تقديم عقود الصيانة والتأمين للمعدات والآلات'
-    ],
-    features: ['سلسلة إمداد موثوقة', 'أسعار تنافسية مباشرة', 'جودة معتمدة حاصلة على ISO'],
-    image: '/supply_materials.jpg'
   }
 ];
 
@@ -158,156 +160,273 @@ export const TEXT_SCROLL_ITEMS = [
   },
   {
     id: 'towers',
-    title: 'أبراج حديثة',
-    sub: 'ناطحات سحاب استثمارية',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80',
-    desc: 'أبراج شاهقة بارتفاعات قياسية تتوسط أرقَى مناطق الأعمال.'
+    title: 'أبراج ومجمعات حديثة',
+    sub: 'مشاريع استثمارية كبرى',
+    image: '/general_contracting.jpg',
+    desc: 'أبراج ومجمعات شاهقة بارتفاعات قياسية تتوسط أرقَى مناطق الأعمال.'
   },
   {
-    id: 'malls',
-    title: 'مولات تجارية',
-    sub: 'وجهات تسوق عالمية',
-    image: 'https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&w=800&q=80',
-    desc: 'مراكز تسوق وترفيه مصممة لجذب الملايين بأسلوب معماري مبهر.'
+    id: 'najdi',
+    title: 'طراز نجدي فاخر',
+    sub: 'أصالة التراث وعراقة البناء',
+    image: '/about_construction.jpg',
+    desc: 'تصاميم معمارية نجدية تحافظ على الهوية والتراث السعودي بأدق التفاصيل.'
   },
   {
     id: 'residential',
     title: 'مجمعات سكنية',
-    sub: 'مجتمعات عمرانية مغلقة',
+    sub: 'مجتمعات عمرانية متكاملة',
     image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
     desc: 'بيئة سكنية آمنة توفر كافة سبل الرفاهية والحدائق الغنّاء.'
   },
-
   {
-    id: 'admin-buildings',
-    title: 'مبانٍ إدارية',
-    sub: 'مقرات للشركات الكبرى',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80',
-    desc: 'مساحات عمل مكتبية ذكية تحقق أعلى معايير الإنتاجية والاستدامة.'
+    id: 'finishing',
+    title: 'تشطيبات وديكور',
+    sub: 'لمسات فنية راقية',
+    image: '/finishing_1.jpg',
+    desc: 'تشطيبات وديكورات داخلية وخارجية بأعلى مستويات الجودة والجمال.'
+  },
+  {
+    id: 'infrastructure',
+    title: 'بنية تحتية',
+    sub: 'تأسيس شبكات وطرق',
+    image: '/infrastructure_work.jpg',
+    desc: 'تأسيس شبكات المياه، الصرف، الطرق، والكهرباء بأعلى كفاءة هندسية.'
   }
 ];
 
 export const PROJECTS: ProjectItem[] = [
   {
-    id: 'proj-1',
-    title: 'برج رؤية رويال تاور',
-    category: 'towers',
-    categoryLabel: 'أبراج حديثة',
-    location: 'الرياض - حي العقيق',
-    area: '45,000 م²',
-    completionYear: '2025',
-    client: 'شركة الاستثمارات العقارية الكبرى',
-    value: '180,000,000 ريال',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1541888946425-d0fbb186a5b2?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80'
-    ],
-    description: 'برج تجاري وإداري مكون من 38 طابقاً مزود بأحدث الواجهات الزجاجية المزدوجة العازلة ونظام الطاقة الشمسية المستدامة.',
-    keyFeatures: ['أنظمة تشغيل ذكية', '3 طوابق مواقف مواقف تحت الأرض', 'مهبط طائرات عامودي']
-  },
-  {
-    id: 'proj-2',
-    title: 'مجمع الواحة الفاخر للفلل',
+    id: 'proj-villas',
+    title: 'مشروع مجمع الفلل السكني الفاخر',
     category: 'villas',
     categoryLabel: 'فلل فاخرة',
-    location: 'جدة - شاطئ أبحر',
-    area: '32,000 م²',
-    completionYear: '2024',
-    client: 'مجموعة الأفق الاستثمارية',
-    value: '95,000,000 ريال',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80'
-    ],
-    description: 'مشروع مجمع سكني متكامل يضم 24 فيلا ملكية مطلة مباشرة على البحر مع حدائق خاصة ومسابح انفينيتي.',
-    keyFeatures: ['إطلالة بحرية مباشرة', 'أنظمة تحكم ذكية كاملة', 'تشطيبات إيطالية فاخرة']
-  },
-  {
-    id: 'proj-3',
-    title: 'مركز رؤية بلازا التجاري',
-    category: 'malls',
-    categoryLabel: 'مولات تجارية',
-    location: 'بغداد - المنصور',
-    area: '60,000 م²',
+    location: '',
+    area: '25,000 م²',
     completionYear: '2025',
-    client: 'شركة النماء التجارية',
-    value: '65,000,000 دولار',
-    image: 'https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&w=1200&q=80',
+    client: 'مجموعة النخبة العقارية',
+    value: '85,000,000 ريال',
+    image: '/projects/villa_real_47.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1541888946425-d0fbb186a5b2?auto=format&fit=crop&w=1200&q=80'
+      '/projects/villa_real_47.jpg',
+      '/projects/villa_real_48.jpg',
+      '/projects/villa_real_49.jpg',
+      '/projects/villa_real_50.jpg',
+      '/projects/villa_real_59.jpg',
+      '/projects/villa_real_60.jpg',
+      '/projects/villa_real_65.jpg',
+      '/projects/villa_real_66.jpg',
+      '/projects/villa_real_67.jpg',
+      '/projects/villa_real_68.jpg',
+      '/projects/villa_real_69.jpg'
     ],
-    description: 'مول تجاري حديث يحتوي على 200 صالة عرض، مجمع سينمائي، ومناطق ترفيهية مغلقة للعائلات وفق طراز معماري زجاجي خلاب.',
-    keyFeatures: ['أنظمة تكييف حزامية', 'شاشات عرض عملاقة متطورة', 'منطقة مطاعم معلقة']
+    description: 'مشروع مجمع فلل سكني فاخر يجسد أعلى درجات الفخامة والرفاهية والواجهات المعمارية المودرن مع المساحات الخضراء والإنارة الليلية.',
+    keyFeatures: ['تصميم معماري ملكي مخصص', 'تشطيبات فاخرة عالية الجودة', 'حدائق خاصة ومساحات خضراء', 'معرض شامل للصور الفاخرة']
   },
   {
-    id: 'proj-4',
-    title: 'مجمع الياسمين السكني',
+    id: 'proj-finishing',
+    title: 'مشروع التشطيبات والديكورات الداخلية الفاخرة',
+    category: 'villas',
+    categoryLabel: 'تشطيبات وديكور',
+    location: '',
+    area: '8,500 م²',
+    completionYear: '2025',
+    client: 'مجموعة المشاريع الخاصة',
+    value: '18,000,000 ريال',
+    image: '/projects/villa_real_40.jpg',
+    gallery: [
+      '/projects/villa_real_40.jpg',
+      '/projects/villa_real_41.jpg',
+      '/projects/villa_real_42.jpg',
+      '/projects/villa_real_43.jpg',
+      '/projects/villa_real_51.jpg',
+      '/projects/villa_real_52.jpg',
+      '/projects/villa_real_53.jpg',
+      '/projects/villa_real_54.jpg',
+      '/projects/villa_real_55.jpg',
+      '/projects/villa_real_56.jpg',
+      '/projects/villa_real_57.jpg',
+      '/projects/villa_real_58.jpg'
+    ],
+    description: 'تنفيذ أعمال التشطيبات والديكورات والإنارة المعمارية المخفية وتصميمات الحوائط والأرضيات الرخامية الخشبية للمشاريع الفاخرة.',
+    keyFeatures: ['إنارة معمارية مخفية', 'أعمال خشبية ورخامية مودرن', 'دهانات عازلة وجودة تنفيذ رفيعة']
+  },
+  {
+    id: 'proj-althunayan',
+    title: 'مشروع المجمع السكني والتجاري الحديث',
+    category: 'towers',
+    categoryLabel: 'مجمعات سكنية وتجارية',
+    location: '',
+    area: '35,000 م²',
+    completionYear: '2025',
+    client: 'مجموعة الاستثمارات العقارية',
+    value: '150,000,000 ريال',
+    image: '/projects/villa_real_9.jpg',
+    gallery: [
+      '/projects/villa_real_9.jpg',
+      '/projects/villa_real_10.jpg',
+      '/projects/villa_real_11.jpg',
+      '/projects/villa_real_12.jpg',
+      '/projects/villa_real_13.jpg',
+      '/projects/villa_real_19.jpg',
+      '/projects/villa_real_20.jpg',
+      '/projects/villa_real_21.jpg',
+      '/projects/villa_real_22.jpg',
+      '/projects/villa_real_23.jpg',
+      '/projects/villa_real_24.jpg',
+      '/projects/villa_real_25.jpg'
+    ],
+    description: 'برج تجاري وسكني فاخر يدمج الإضاءة الليلية الحديثة والواجهات الزجاجية المتطورة وفق أعلى المعايير المعمارية العالمية.',
+    keyFeatures: ['تصميم ليلي ونهاري فاخر', 'واجهات زجاجية حديثة', 'مواقف سيارات متعددة الطوابق']
+  },
+  {
+    id: 'proj-munira',
+    title: 'مشروع المجمع السكني بالطراز النجدي الأصيل',
+    category: 'residential',
+    categoryLabel: 'مجمعات نجدية سكنية',
+    location: '',
+    area: '18,000 م²',
+    completionYear: '2024',
+    client: 'شركة التطوير العمراني',
+    value: '45,000,000 ريال',
+    image: '/projects/villa_real_26.jpg',
+    gallery: [
+      '/projects/villa_real_26.jpg',
+      '/projects/villa_real_27.jpg',
+      '/projects/villa_real_28.jpg',
+      '/projects/villa_real_29.jpg',
+      '/projects/villa_real_30.jpg',
+      '/projects/villa_real_31.jpg',
+      '/projects/villa_real_32.jpg',
+      '/projects/villa_real_33.jpg',
+      '/projects/villa_real_34.jpg',
+      '/projects/villa_real_35.jpg',
+      '/projects/villa_real_36.jpg',
+      '/projects/villa_real_37.jpg',
+      '/projects/villa_real_38.jpg'
+    ],
+    description: 'مجمع سكني بتصميم نجدي أصيل يمزج بين التراث السعودي العريق والتقنيات الإنشائية الحديثة والتشطيبات الملكية.',
+    keyFeatures: ['طراز نجدي أصيل', 'تشطيبات دقيقة عالية الجودة', 'عزل حراري ومائي متطور']
+  },
+  {
+    id: 'proj-hanan',
+    title: 'مشروع مجمع الفلل والمباني المودرن',
+    category: 'villas',
+    categoryLabel: 'فلل فاخرة',
+    location: '',
+    area: '1,800 م²',
+    completionYear: '2024',
+    client: 'مجموعة الأفق العقارية',
+    value: '12,500,000 ريال',
+    image: '/projects/villa_real_76.jpg',
+    gallery: [
+      '/projects/villa_real_76.jpg',
+      '/projects/villa_real_77.jpg',
+      '/projects/villa_real_78.jpg',
+      '/projects/villa_real_79.jpg',
+      '/projects/villa_real_80.jpg',
+      '/projects/villa_real_81.jpg',
+      '/projects/villa_real_82.jpg',
+      '/projects/villa_real_83.jpg',
+      '/projects/villa_real_84.jpg',
+      '/projects/villa_real_85.jpg',
+      '/projects/villa_real_86.jpg',
+      '/projects/villa_real_87.jpg'
+    ],
+    description: 'فيلا سكنية فاخرة بتصميم معماري مودرن فريد يجمع بين الخصوصية التامة والجمال العصري والمسابح الذكية.',
+    keyFeatures: ['واجهات مودرن حصرية', 'أنظمة منازل ذكية', 'تنسيق حدائق ومساحات خضراء']
+  },
+  {
+    id: 'proj-noura',
+    title: 'مشروع الفيلا الملكية المستقلة',
+    category: 'villas',
+    categoryLabel: 'فلل فاخرة',
+    location: '',
+    area: '2,200 م²',
+    completionYear: '2024',
+    client: 'قطاع التطوير السكني',
+    value: '15,000,000 ريال',
+    image: '/projects/villa_real_61.jpg',
+    gallery: [
+      '/projects/villa_real_61.jpg',
+      '/projects/villa_real_62.jpg',
+      '/projects/villa_real_63.jpg',
+      '/projects/villa_real_70.jpg',
+      '/projects/villa_real_71.jpg',
+      '/projects/villa_real_72.jpg',
+      '/projects/villa_real_73.jpg',
+      '/projects/villa_real_88.jpg',
+      '/projects/villa_real_89.jpg',
+      '/projects/villa_real_90.jpg'
+    ],
+    description: 'تصميم وتنفيذ فيلا ملكية مستقلة بأعلى معايير الإتقان، واجهات رخامية مميزة وإضاءات جدارية ساحرة.',
+    keyFeatures: ['تشطيب رخامي فاخر', 'إضاءات معمارية مخفية', 'حديقة منزلية ومسبح ذكي']
+  },
+  {
+    id: 'proj-khaled',
+    title: 'مشروع العمارة السكنية والتطوير العقاري',
     category: 'residential',
     categoryLabel: 'مجمعات سكنية',
-    location: 'الرياض - حي الياسمين',
-    area: '85,000 م²',
-    completionYear: '2023',
-    client: 'صندوق التنمية العقارية',
-    value: '220,000,000 ريال',
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80',
+    location: '',
+    area: '12,000 م²',
+    completionYear: '2025',
+    client: 'شركة التطوير العقاري',
+    value: '32,000,000 ريال',
+    image: '/projects/villa_real_74.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80'
+      '/projects/villa_real_74.jpg',
+      '/projects/villa_real_75.jpg',
+      '/projects/villa_real_1.jpg',
+      '/projects/villa_real_2.jpg',
+      '/projects/villa_real_3.jpg',
+      '/projects/villa_real_4.jpg',
+      '/projects/villa_real_5.jpg',
+      '/projects/villa_real_6.jpg',
+      '/projects/villa_real_7.jpg',
+      '/projects/villa_real_8.jpg'
     ],
-    description: 'حي سكني مغلق يضم 120 وحدة سكنية مع مساحات خضراء، مركز صحي، ونادي رياضي متكامل للساكنين.',
-    keyFeatures: ['حراسة أمنية على مدار الساعة', 'طاقة شمسية للمرافق العامة', 'مساحات مشاة خضراء']
+    description: 'مبنى سكني وتجاري متكامل تم تطويره وفق أحدث معايير البناء المستدام والكود السعودي لضمان أعلى عوائد استثمارية.',
+    keyFeatures: ['موقع استراتيجي حيوي', 'مطابق للكود السعودي', 'واجهات عصرية متينة']
   },
   {
-    id: 'proj-5',
-    title: 'مشروع الجسر الرئيسي وشبكة الطرق',
+    id: 'proj-infra',
+    title: 'مشروع البنية التحتية وتمديد الشبكات',
     category: 'infrastructure',
     categoryLabel: 'البنية التحتية',
-    location: 'الدمام - المنطقة الشرقية',
-    area: '12 كيلومتر',
+    location: '',
+    area: '15 كيلومتر',
     completionYear: '2024',
-    client: 'وزارة النقل والمواصلات',
-    value: '140,000,000 ريال',
-    image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?auto=format&fit=crop&w=1200&q=80',
+    client: 'جهات حكومية وخاصة',
+    value: '85,000,000 ريال',
+    image: '/projects/villa_real_14.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1590496793929-36417d3117de?auto=format&fit=crop&w=1200&q=80'
+      '/projects/villa_real_14.jpg',
+      '/projects/villa_real_15.jpg',
+      '/projects/villa_real_16.jpg',
+      '/projects/villa_real_17.jpg',
+      '/projects/villa_real_18.jpg',
+      '/projects/villa_real_44.jpg',
+      '/projects/villa_real_45.jpg',
+      '/projects/villa_real_46.jpg',
+      '/projects/villa_real_64.jpg'
     ],
-    description: 'تنفيذ أعمال الطرق السريعة وتقاطعات الجسور الخرسانية مع ربط الشبكة الرئيسية بالخدمات والمرافق ذات الصلة.',
-    keyFeatures: ['أنظمة إنارة LED ذكية', 'جسور خرسانية سابقة الإجهاد', 'شبكات تصريف مياه الأمطار']
-  },
-  {
-    id: 'proj-6',
-    title: 'المقر الرئيسي لشركة التجارة الوطنية',
-    category: 'towers',
-    categoryLabel: 'مبانٍ إدارية',
-    location: 'الرياض - طريق الملك فهد',
-    area: '28,000 م²',
-    completionYear: '2023',
-    client: 'شركة التجارة الوطنية',
-    value: '110,000,000 ريال',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80'
-    ],
-    description: 'مبنى إداري ذكي بتصميم مستقبلي نال جائزة أفضل تصميم ذكي للشركات لعام 2023.',
-    keyFeatures: ['شهادة LEED الفضية', 'واجهات تمنع حرارة الشمس', 'قاعات مؤتمرات هجينة']
+    description: 'تنفيذ أعمال الطرق والسفلتة وتمديد شبكات المرافق الرئيسية والفرعية بأحدث المعدات والآليات الثقيلة.',
+    keyFeatures: ['دك وردم هندسي معتمد', 'إنارة LED موفرة', 'تصريف مياه الأمطار والسيول']
   }
 ];
 
 export const STATS: StatItem[] = [
   {
     id: 'completed-projects',
-    number: 250,
+    number: 25,
     suffix: '+',
     label: 'مشروع منجز',
-    description: 'تنفيذ كامل وفق أعلى المقاييس العالمية',
+    description: 'تنفيذ 25+ مشروعاً بنجاح وفق أعلى المقاييس العالمية',
     icon: 'CheckCircle2'
   },
   {
     id: 'satisfied-clients',
-    number: 500,
+    number: 150,
     suffix: '+',
     label: 'عميل وشريك',
     description: 'ثقة نعتز بها في جميع أنحاء المنطقة',
@@ -315,18 +434,18 @@ export const STATS: StatItem[] = [
   },
   {
     id: 'years-experience',
-    number: 20,
+    number: 2,
     suffix: '+',
-    label: 'سنة خبرة',
-    description: 'مسيرة حافلة بالإنجازات والعطاء المتواصل',
+    label: 'سنتين خبرة',
+    description: 'سنتين حافلتان بالإنجازات والعطاء المتواصل',
     icon: 'Award'
   },
   {
     id: 'total-employees',
-    number: 1000,
+    number: 5,
     suffix: '+',
-    label: 'مهندس وموظف',
-    description: 'طاقم عمل متكامل يقود النجاح بكل شغف',
+    label: 'مهندسين مختصين',
+    description: 'نخبة من المهندسين يقودون التنفيذ بكل احترافية',
     icon: 'HardHat'
   }
 ];
@@ -390,29 +509,42 @@ export const PARTNERS: PartnerItem[] = [
 export const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 't1',
-    name: 'المهندس عبد العزيز السلمان',
-    role: 'رئيس مجلس الإدارة',
-    company: 'مجموعة الأفق الاستثمارية',
-    comment: 'تعتبر شركة رؤية الريادة للمقاولات النموذج الأمثل في تنفيذ المشاريع المعقدة. تم تسليم مشروع برجنا السكني قبل موعده المحدد بـ 3 أشهر مع مراعاة كافة أدق التفاصيل الهندسية.',
+    name: 'Abdulrahman Mohammed',
+    role: 'تقييم موثق ★★★★★',
+    company: 'مراجعات جوجل Google Reviews',
+    comment: 'شركة محترفة وموثوقة، نفذت أعمال العظم بجودة عالية واحترافية، مع التزام بالمواعيد وجودة في التنفيذ. أنصح بالتعامل معها.',
+    ownerReply: 'شهادة نعتز بيها م عبدالرحمن وسعدنا بالعمل مع سعادتكم',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80'
+    avatar: 'https://ui-avatars.com/api/?name=Abdulrahman+Mohammed&background=4F46E5&color=fff&bold=true'
   },
   {
     id: 't2',
-    name: 'الدكتور طارق الهاشمي',
-    role: 'الرئيس التنفيذي',
-    company: 'شركة النماء العقارية',
-    comment: 'الاحترافية العالية والدقة الشديدة في التشطيبات هي أهم ما يميز طاقم شركة رؤية الريادة. تعاملنا معهم في عدة مشاريع تجارية وسنستمر دائماً كشركاء نجاح.',
+    name: 'SA',
+    role: 'تقييم موثق ★★★★★',
+    company: 'مراجعات جوجل Google Reviews',
+    comment: 'من تجربتي مع هذه الشركة الرائعة، كانت تجربة ممتازة وشغل نظيف ومتابعة مستمرة وعمل متقن وخاصة م. طارق ، يستحقون الشكر وتكرار العمل معهم.',
+    ownerReply: 'شرف لنا العمل مع سعادتكم 🌹',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80'
+    avatar: 'https://ui-avatars.com/api/?name=SA&background=7C3AED&color=fff&bold=true'
   },
   {
     id: 't3',
-    name: 'الشيخ منصور الرشيد',
-    role: 'مالك مشروع قصور الخزامى',
-    company: 'مؤسسة الرشيد للتنمية',
-    comment: 'قاموا بتصميم وبناء قصر العائلة بأسلوب أبهر الجميع. جودة البناء العظم واللمسات الأخيرة تجسد معنى الفخامة الحقيقية.',
+    name: 'Mohamed Omr',
+    role: 'تقييم موثق ★★★★★',
+    company: 'مراجعات جوجل Google Reviews',
+    comment: 'من افضل الشركات في الخرج يكفي احترام المهندسين المتواجدين وخاصة المهندس طارق قمة الاحترام والذوق في التعامل.',
+    ownerReply: '🌹',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80'
+    avatar: 'https://ui-avatars.com/api/?name=Mohamed+Omr&background=EA580C&color=fff&bold=true'
+  },
+  {
+    id: 't4',
+    name: 'Sam Alqahtani',
+    role: 'تقييم موثق ★★★★★',
+    company: 'مراجعات جوجل Google Reviews',
+    comment: 'شركة رائده في مجال الانشاءات بخبرات هندسية كل الشكر للمهندس طارق على الادارة والتعاون.',
+    ownerReply: 'اشكرك علي ثقتك الغالية',
+    rating: 5,
+    avatar: 'https://ui-avatars.com/api/?name=Sam+Alqahtani&background=059669&color=fff&bold=true'
   }
 ];

@@ -34,6 +34,7 @@ export interface TestimonialItem {
   comment: string;
   rating: number;
   avatar: string;
+  ownerReply?: string;
 }
 
 export interface PartnerItem {

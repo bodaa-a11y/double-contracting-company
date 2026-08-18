@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://roaiatalriada-ksa.com/sitemap.xml

@@ -1,7 +1,7 @@
 import React from 'react';
 import { CompanyLogo } from './CompanyLogo';
 import { COMPANY_INFO, SERVICES } from '../data/companyData';
-import { Phone, Mail, MapPin, ArrowUp, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Phone, Mail, MapPin, ArrowUp, Linkedin, Twitter, Facebook, Clock } from 'lucide-react';
 
 const TiktokIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
@@ -96,7 +96,7 @@ export const Footer: React.FC = () => {
             </h4>
             <p className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-[#116B43]" />
-              <span className="dir-ltr">{COMPANY_INFO.phone}</span>
+              <span dir="ltr" className="inline-block font-bold">{COMPANY_INFO.phoneDisplay}</span>
             </p>
             <p className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-[#116B43]" />
@@ -106,6 +106,15 @@ export const Footer: React.FC = () => {
               <MapPin className="w-4 h-4 text-[#116B43] flex-shrink-0 mt-0.5" />
               <span>{COMPANY_INFO.address}</span>
             </p>
+            <div className="pt-2 border-t border-white/10 mt-3 text-[11px] text-gray-300 space-y-1">
+              <div className="flex items-center gap-1.5 text-[#C9A227] font-bold">
+                <Clock className="w-3.5 h-3.5 text-[#116B43]" />
+                <span>مواعيد الدوام:</span>
+              </div>
+              <p>• السبت - الأربعاء: (9:00 ص - 12:00 ظ) & (4:00 ع - 9:00 م)</p>
+              <p>• الخميس: (9:00 ص - 1:00 ظ - نصف يوم)</p>
+              <p>• الجمعة: عطلة أسبوعية (مغلق)</p>
+            </div>
           </div>
 
         </div>

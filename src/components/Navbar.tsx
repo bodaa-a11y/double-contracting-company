@@ -218,7 +218,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCallModal }) => {
                   className="w-full flex items-center justify-center gap-3 py-3 rounded-xl bg-[#C9A227] text-[#39424C] font-extrabold shadow-lg"
                 >
                   <Phone className="w-5 h-5" />
-                  <span>{COMPANY_INFO.phone}</span>
+                  <span dir="ltr">{COMPANY_INFO.phoneDisplay}</span>
                 </a>
               </div>
             </div>

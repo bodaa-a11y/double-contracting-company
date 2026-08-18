@@ -63,7 +63,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
         </div>
 
         {/* Categories Filter Tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+        <div className="flex items-center justify-start sm:justify-center gap-2 sm:gap-3 mb-8 sm:mb-12 overflow-x-auto pb-2 px-1 max-w-full">
           {categories.map((cat) => {
             const isActive = activeFilter === cat.id;
             return (
@@ -129,30 +129,12 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                     </h3>
 
                     {/* Metadata Strip */}
-                    <div className="grid grid-cols-3 gap-2 py-3 px-3 rounded-xl bg-[#F5F7F8] border border-gray-100 text-xs mb-4">
-                      <div className="flex flex-col items-start text-right">
-                        <span className="text-gray-500 font-bold flex items-center gap-1">
-                          <MapPin className="w-3.5 h-3.5 text-[#116B43]" />
-                          الموقع
-                        </span>
-                        <span className="font-extrabold text-[#39424C] truncate w-full">{project.location.split('-')[0]}</span>
-                      </div>
-
-                      <div className="flex flex-col items-start text-right">
-                        <span className="text-gray-500 font-bold flex items-center gap-1">
-                          <Maximize2 className="w-3.5 h-3.5 text-[#116B43]" />
-                          المساحة
-                        </span>
-                        <span className="font-extrabold text-[#39424C]">{project.area}</span>
-                      </div>
-
-                      <div className="flex flex-col items-start text-right">
-                        <span className="text-gray-500 font-bold flex items-center gap-1">
-                          <Calendar className="w-3.5 h-3.5 text-[#116B43]" />
-                          التاريخ
-                        </span>
-                        <span className="font-extrabold text-[#39424C]">{project.completionYear}</span>
-                      </div>
+                    <div className="flex items-center justify-between py-2.5 px-4 rounded-xl bg-[#F5F7F8] border border-gray-100 text-xs mb-4">
+                      <span className="text-gray-500 font-bold flex items-center gap-1">
+                        <Calendar className="w-3.5 h-3.5 text-[#116B43]" />
+                        تاريخ الإنجاز
+                      </span>
+                      <span className="font-extrabold text-[#39424C]">{project.completionYear}</span>
                     </div>
                   </div>
 

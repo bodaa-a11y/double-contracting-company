@@ -40,9 +40,6 @@ export default function App() {
             onOpenCallModal={() => setCallModalOpen(true)}
           />
 
-          {/* Interactive Text Scroll Showcase for Construction Types */}
-          <TextScrollSection />
-
           {/* About Section (من نحن) */}
           <AboutSection />
 
