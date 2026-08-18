@@ -113,7 +113,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                   </div>
 
                   {/* View Details Hover Button */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                     <span className="px-5 py-2.5 rounded-full bg-[#C9A227] text-[#39424C] font-black text-sm shadow-2xl flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                       <Eye className="w-4 h-4" />
                       <span>عرض معارض الصور والتفاصيل</span>

@@ -76,7 +76,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
           </div>
 
           {/* Main Gallery Display Area */}
-          <div className="relative w-full h-[320px] sm:h-[440px] bg-black/95 flex items-center justify-center overflow-hidden flex-shrink-0">
+          <div className="relative w-full h-[250px] sm:h-[420px] bg-black/95 flex items-center justify-center overflow-hidden flex-shrink-0">
             {/* Active Image */}
             <motion.img
               key={activeImageIndex}
