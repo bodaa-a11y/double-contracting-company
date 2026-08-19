@@ -206,11 +206,8 @@ export const PROJECTS: ProjectItem[] = [
     completionYear: '2025',
     client: 'مجموعة النخبة العقارية',
     value: '85,000,000 ريال',
-    image: '/projects/nudra_1.jpg',
+    image: '/projects/hanan_1.jpg',
     gallery: [
-      '/projects/nudra_1.jpg',
-      '/projects/nudra_2.jpg',
-      '/projects/nudra_3.jpg',
       '/projects/hanan_1.jpg',
       '/projects/hanan_2.jpg',
       '/projects/hanan_3.jpg',
@@ -226,8 +223,7 @@ export const PROJECTS: ProjectItem[] = [
       '/projects/nudra_extracted_7.jpeg',
       '/projects/nudra_extracted_8.jpeg',
       '/projects/nudra_extracted_9.jpeg',
-      '/projects/nudra_extracted_10.jpeg',
-      '/projects/nudra_pdf_page_1.jpg'
+      '/projects/nudra_extracted_10.jpeg'
     ],
     description: 'مشروع مجمع الفلل والقصور السكني الفاخر يجسد أعلى درجات الفخامة والرفاهية والواجهات المعمارية المودرن مع المساحات الخضراء والإنارة الليلية.',
     keyFeatures: ['تصميم معماري ملكي مخصص', 'تشطيبات فاخرة عالية الجودة', 'حدائق خاصة ومساحات خضراء', 'معرض شامل لصور الفلل']
@@ -242,20 +238,20 @@ export const PROJECTS: ProjectItem[] = [
     completionYear: '2025',
     client: 'مجموعة المشاريع الخاصة',
     value: '18,000,000 ريال',
-    image: '/projects/villa_real_40.jpg',
+    image: '/finishing_1.jpg',
     gallery: [
-      '/projects/villa_real_40.jpg',
-      '/projects/villa_real_41.jpg',
-      '/projects/villa_real_42.jpg',
-      '/projects/villa_real_43.jpg',
+      '/finishing_1.jpg',
+      '/projects/villa_real_55.jpg',
+      '/projects/villa_real_56.jpg',
+      '/projects/villa_real_57.jpg',
+      '/projects/villa_real_58.jpg',
       '/projects/villa_real_51.jpg',
       '/projects/villa_real_52.jpg',
       '/projects/villa_real_53.jpg',
       '/projects/villa_real_54.jpg',
-      '/projects/villa_real_55.jpg',
-      '/projects/villa_real_56.jpg',
-      '/projects/villa_real_57.jpg',
-      '/projects/villa_real_58.jpg'
+      '/projects/villa_real_40.jpg',
+      '/projects/villa_real_41.jpg',
+      '/projects/villa_real_42.jpg'
     ],
     description: 'تنفيذ أعمال التشطيبات والديكورات والإنارة المعمارية المخفية وتصميمات الحوائط والأرضيات الرخامية الخشبية للمشاريع الفاخرة.',
     keyFeatures: ['إنارة معمارية مخفية', 'أعمال خشبية ورخامية مودرن', 'دهانات عازلة وجودة تنفيذ رفيعة']
