@@ -356,14 +356,12 @@ export const PROJECTS: ProjectItem[] = [
     completionYear: '2024',
     client: 'الجهات الحكومية والمخططات العقارية',
     value: '50,000,000 ريال',
-    image: '/projects/infra_1.jpg',
+    image: '/projects/infra_real_3.jpg',
     gallery: [
-      '/projects/infra_1.jpg',
-      '/projects/infra_2.jpg',
-      '/projects/infra_3.jpg',
-      '/projects/infra_4.jpg',
-      '/projects/infra_5.jpg',
-      '/projects/infra_6.jpg'
+      '/projects/infra_real_3.jpg',
+      '/projects/infra_real_1.jpg',
+      '/projects/infra_real_2.jpg',
+      '/projects/infra_real_4.jpg'
     ],
     description: 'تنفيذ أعمال الحفريات والتسوية وتمديد شبكات المياه والصرف ورصف الطرق للمخططات الحديثة.',
     keyFeatures: ['تنفيذ طبق المواصفات القياسية', 'معدات وإنشاءات ثقيلة', 'إنجاز قياسي وفق الجدول الزمني']
