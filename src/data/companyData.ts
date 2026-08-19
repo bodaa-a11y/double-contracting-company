@@ -238,20 +238,13 @@ export const PROJECTS: ProjectItem[] = [
     completionYear: '2025',
     client: 'مجموعة المشاريع الخاصة',
     value: '18,000,000 ريال',
-    image: '/finishing_1.jpg',
+    image: '/projects/finishing_real_1.jpg',
     gallery: [
-      '/finishing_1.jpg',
-      '/projects/villa_real_55.jpg',
-      '/projects/villa_real_56.jpg',
-      '/projects/villa_real_57.jpg',
-      '/projects/villa_real_58.jpg',
-      '/projects/villa_real_51.jpg',
-      '/projects/villa_real_52.jpg',
-      '/projects/villa_real_53.jpg',
-      '/projects/villa_real_54.jpg',
-      '/projects/villa_real_40.jpg',
-      '/projects/villa_real_41.jpg',
-      '/projects/villa_real_42.jpg'
+      '/projects/finishing_real_1.jpg',
+      '/projects/finishing_real_2.jpg',
+      '/projects/finishing_real_3.jpg',
+      '/projects/finishing_real_4.jpg',
+      '/projects/finishing_real_5.jpg'
     ],
     description: 'تنفيذ أعمال التشطيبات والديكورات والإنارة المعمارية المخفية وتصميمات الحوائط والأرضيات الرخامية الخشبية للمشاريع الفاخرة.',
     keyFeatures: ['إنارة معمارية مخفية', 'أعمال خشبية ورخامية مودرن', 'دهانات عازلة وجودة تنفيذ رفيعة']
