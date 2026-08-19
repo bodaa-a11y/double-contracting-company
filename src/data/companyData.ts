@@ -244,7 +244,12 @@ export const PROJECTS: ProjectItem[] = [
       '/projects/finishing_real_2.jpg',
       '/projects/finishing_real_3.jpg',
       '/projects/finishing_real_4.jpg',
-      '/projects/finishing_real_5.jpg'
+      '/projects/finishing_real_5.jpg',
+      '/projects/finishing_real_6.jpg',
+      '/projects/finishing_real_7.jpg',
+      '/projects/finishing_real_8.jpg',
+      '/projects/finishing_real_9.jpg',
+      '/projects/finishing_real_10.jpg'
     ],
     description: 'تنفيذ أعمال التشطيبات والديكورات والإنارة المعمارية المخفية وتصميمات الحوائط والأرضيات الرخامية الخشبية للمشاريع الفاخرة.',
     keyFeatures: ['إنارة معمارية مخفية', 'أعمال خشبية ورخامية مودرن', 'دهانات عازلة وجودة تنفيذ رفيعة']
