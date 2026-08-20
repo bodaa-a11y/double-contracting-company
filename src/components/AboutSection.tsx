@@ -60,7 +60,7 @@ export const AboutSection: React.FC = () => {
             <div className="space-y-3 pt-2">
               <div className="flex items-center gap-3 text-gray-800 font-bold">
                 <CheckCircle2 className="w-5 h-5 text-[#116B43] flex-shrink-0" />
-                <span>إشراف هندسي متكامل من طاقم يمتلك خبرة سنتين من التميز الإنشائي</span>
+                <span>إشراف هندسي متكامل من طاقم يمتلك خبرة سنوات من التميز الإنشائي</span>
               </div>
               <div className="flex items-center gap-3 text-gray-800 font-bold">
                 <CheckCircle2 className="w-5 h-5 text-[#116B43] flex-shrink-0" />
@@ -125,14 +125,11 @@ export const AboutSection: React.FC = () => {
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                className="absolute -bottom-6 -left-6 bg-[#39424C] text-white p-5 rounded-2xl border border-[#C9A227]/40 shadow-2xl flex items-center gap-4 text-right"
+                className="absolute -bottom-6 -left-6 bg-[#39424C] text-white p-4 px-6 rounded-2xl border border-[#C9A227]/40 shadow-2xl flex items-center gap-3 text-right"
               >
-                <div className="p-3.5 rounded-xl bg-[#C9A227] text-[#39424C] font-black text-2xl font-heading shadow-md">
-                  2+
-                </div>
                 <div>
-                  <div className="font-black text-base text-white">سنتين من التميز والابتكار</div>
-                   <div className="text-[#C9A227] text-xs font-semibold">شركة رؤية الريادة للمقاولات والتطوير العقاري</div>
+                  <div className="font-black text-base text-white">سنين من التميز والابتكار</div>
+                  <div className="text-[#C9A227] text-xs font-semibold">شركة رؤية الريادة للمقاولات والتطوير العقاري</div>
                 </div>
               </motion.div>
             </div>
