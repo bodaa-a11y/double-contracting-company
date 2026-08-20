@@ -223,7 +223,17 @@ export const PROJECTS: ProjectItem[] = [
       '/projects/nudra_extracted_7.jpeg',
       '/projects/nudra_extracted_8.jpeg',
       '/projects/nudra_extracted_9.jpeg',
-      '/projects/nudra_extracted_10.jpeg'
+      '/projects/nudra_extracted_10.jpeg',
+      '/projects/nudra_hd_1.jpg',
+      '/projects/nudra_hd_2.jpg',
+      '/projects/nudra_hd_3.jpg',
+      '/projects/nudra_hd_4.jpg',
+      '/projects/nudra_hd_5.jpg',
+      '/projects/nudra_hd_6.jpg',
+      '/projects/nudra_hd_7.jpg',
+      '/projects/nudra_hd_8.jpg',
+      '/projects/nudra_hd_9.jpg',
+      '/projects/nudra_hd_10.jpg'
     ],
     description: 'مشاريع الفلل والمجمعات السكنية تجسد أعلى درجات الفخامة والرفاهية والواجهات المعمارية المودرن مع المساحات الخضراء والإنارة الليلية.',
     keyFeatures: ['تصميم معماري ملكي مخصص', 'تشطيبات فاخرة عالية الجودة', 'حدائق خاصة ومساحات خضراء', 'معرض شامل لصور الفلل']
