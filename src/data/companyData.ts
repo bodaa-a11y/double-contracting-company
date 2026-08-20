@@ -272,7 +272,20 @@ export const PROJECTS: ProjectItem[] = [
       '/projects/villa_real_26.jpg',
       '/projects/althunayan_1.jpg',
       '/projects/althunayan_2.jpg',
-      '/projects/althunayan_3.jpg'
+      '/projects/althunayan_3.jpg',
+      '/projects/aboudi_1.jpg',
+      '/projects/aboudi_2.jpg',
+      '/projects/aboudi_3.jpg',
+      '/projects/aboudi_4.jpg',
+      '/projects/aboudi_5.jpg',
+      '/projects/aboudi_6.jpg',
+      '/projects/aboudi_7.jpg',
+      '/projects/aboudi_8.jpg',
+      '/projects/aboudi_9.jpg',
+      '/projects/aboudi_10.jpg',
+      '/projects/aboudi_11.jpg',
+      '/projects/aboudi_12.jpg',
+      '/projects/aboudi_13.jpg'
     ],
     description: 'مجمع سكني وتجاري بتصميم نجدي أصيل يمزج بين التراث السعودي العريق والتقنيات الإنشائية الحديثة والتشطيبات الملكية.',
     keyFeatures: ['طراز نجدي أصيل', 'تشطيبات دقيقة عالية الجودة', 'عزل حراري ومائي متطور']
