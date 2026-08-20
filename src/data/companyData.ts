@@ -256,7 +256,7 @@ export const PROJECTS: ProjectItem[] = [
   },
   {
     id: 'proj-najdi-community',
-    title: 'مشروع المجمع السكني والتجاري بالطراز النجدي الأصيل',
+    title: 'مشروع المجمع السكني والتجاري بالطراز النجدي',
     category: 'residential',
     categoryLabel: 'مجمعات نجدية سكنية',
     location: '',
@@ -281,24 +281,8 @@ export const PROJECTS: ProjectItem[] = [
       '/projects/villa_real_35.jpg',
       '/projects/villa_real_36.jpg',
       '/projects/villa_real_37.jpg',
-      '/projects/villa_real_38.jpg'
-    ],
-    description: 'مجمع سكني وتجاري بتصميم نجدي أصيل يمزج بين التراث السعودي العريق والتقنيات الإنشائية الحديثة والتشطيبات الملكية.',
-    keyFeatures: ['طراز نجدي أصيل', 'تشطيبات دقيقة عالية الجودة', 'عزل حراري ومائي متطور']
-  },
-  {
-    id: 'proj-modern-commercial',
-    title: 'مشروع المجمع السكني والتجاري الحديث',
-    category: 'towers',
-    categoryLabel: 'مجمعات سكنية وتجارية',
-    location: '',
-    area: '35,000 م²',
-    completionYear: '2025',
-    client: 'مجموعة الاستثمارات العقارية',
-    value: '150,000,000 ريال',
-    image: '/projects/althunayan_1.jpg',
-    gallery: [
-      '/projects/althunayan_1.jpg',
+      '/projects/villa_real_38.jpg',
+'/projects/althunayan_1.jpg',
       '/projects/althunayan_2.jpg',
       '/projects/althunayan_3.jpg',
       '/projects/villa_real_9.jpg',
@@ -314,10 +298,10 @@ export const PROJECTS: ProjectItem[] = [
       '/projects/villa_real_24.jpg',
       '/projects/villa_real_25.jpg'
     ],
-    description: 'مجمع تجاري وسكني حديث يدمج الإضاءة الليلية الفاخرة والواجهات الزجاجية المتطورة وفق أعلى المعايير المعمارية العالمية.',
-    keyFeatures: ['تصميم ليلي ونهاري فاخر', 'واجهات زجاجية حديثة', 'مواقف سيارات متعددة الطوابق']
+    description: 'مجمع سكني وتجاري بتصميم نجدي أصيل يمزج بين التراث السعودي العريق والتقنيات الإنشائية الحديثة والتشطيبات الملكية.',
+    keyFeatures: ['طراز نجدي أصيل', 'تشطيبات دقيقة عالية الجودة', 'عزل حراري ومائي متطور']
   },
-  {
+    {
     id: 'proj-residential-buildings',
     title: 'مشروع المباني والعمارات السكنية والاستثمارية',
     category: 'residential',
