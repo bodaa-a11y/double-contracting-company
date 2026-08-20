@@ -198,9 +198,9 @@ export const TEXT_SCROLL_ITEMS = [
 export const PROJECTS: ProjectItem[] = [
   {
     id: 'proj-villas',
-    title: 'مشروع مجمع الفلل والقصور السكني الفاخر',
+    title: 'مشاريع الفلل والمجمعات السكنية',
     category: 'villas',
-    categoryLabel: 'مجمع الفلل والقصور',
+    categoryLabel: 'الفلل والمجمعات السكنية',
     location: '',
     area: '25,000 م²',
     completionYear: '2025',
@@ -225,7 +225,7 @@ export const PROJECTS: ProjectItem[] = [
       '/projects/nudra_extracted_9.jpeg',
       '/projects/nudra_extracted_10.jpeg'
     ],
-    description: 'مشروع مجمع الفلل والقصور السكني الفاخر يجسد أعلى درجات الفخامة والرفاهية والواجهات المعمارية المودرن مع المساحات الخضراء والإنارة الليلية.',
+    description: 'مشاريع الفلل والمجمعات السكنية تجسد أعلى درجات الفخامة والرفاهية والواجهات المعمارية المودرن مع المساحات الخضراء والإنارة الليلية.',
     keyFeatures: ['تصميم معماري ملكي مخصص', 'تشطيبات فاخرة عالية الجودة', 'حدائق خاصة ومساحات خضراء', 'معرض شامل لصور الفلل']
   },
   {
